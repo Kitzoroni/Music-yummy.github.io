@@ -1,2 +1,2 @@
-# Music-yummy.github.io
+# Music yummy
 Music player coding
