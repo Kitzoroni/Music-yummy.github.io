@@ -1,1 +1,10 @@
 println("ey");
+//
+print("ey");
+print("ey");
+//
+print("ey");
+print("\tey");
+//
+print("ey");
+print("\ntey");
