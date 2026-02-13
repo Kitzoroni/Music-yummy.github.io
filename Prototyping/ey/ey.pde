@@ -7,4 +7,4 @@ print("ey");
 print("\tey");
 //
 print("ey");
-print("\ntey");
+print("\ney");
