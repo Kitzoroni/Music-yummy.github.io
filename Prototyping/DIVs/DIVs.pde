@@ -32,3 +32,4 @@ rect( songPlayDivX, songPlayDivY, songPlayDivWidth, songPlayDivHeight );
 rect( songLoopDivX, songLoopDivY, songLoopDivWidth, songLoopDivHeight );
 rect( songNextDivX, songNextDivY, songNextDivWidth, songNextDivHeight );
 rect( songBackDivX, songBackDivY, songBackDivWidth, songBackDivHeight );
+rect( songPlayDivX, songPlayDivY, songPlayDivWidth, songPlayDivHeight );
