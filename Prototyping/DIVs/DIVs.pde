@@ -8,13 +8,18 @@ int appHeight = displayHeight;
 //
 int paperWidth = 260;
 int paperHeight = 202;
+float songImageDivX = appWidth * ??? / paperWidth;
+float songImageDivY = appHeight *  ??? / paperHeight;
+float songImageDivWidth = appWidth * ??? / paperWidth;
+float songImageDivHeight = appHeight * ??? / paperHeight;
+
 float DivX = appWidth * ??? / paperWidth;
 float DivY = appHeight *  ??? / paperHeight;
 float DivWidth = appWidth * ??? / paperWidth;
 float DivHeight = appHeight * ??? / paperHeight;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
-rect( songTitleDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
+rect( songImageDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
 rect( songLyricsDivX, songLyricsDivY, songLyricsDivWidth, songLyricsDivHeight );
 rect( songScrollDivX, songScrollDivY, songScrollDivWidth, songScrollDivHeight );
 rect( songPinDivX, songPinDivY, songPinDivWidth, songPinDivHeight );
