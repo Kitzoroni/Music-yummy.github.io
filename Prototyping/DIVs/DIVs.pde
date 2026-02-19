@@ -6,15 +6,15 @@ fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
-int paperWidth = 279;
-int paperHeight = 216;
+int paperWidth = 260;
+int paperHeight = 202;
 float DivX = appWidth * ??? / paperWidth;
 float DivY = appHeight *  ??? / paperHeight;
 float DivWidth = appWidth * ??? / paperWidth;
 float DivHeight = appHeight * ??? / paperHeight;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
-rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+rect( songTitleDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
 rect( songLyricsDivX, songLyricsDivY, songLyricsDivWidth, songLyricsDivHeight );
 rect( songScrollDivX, songScrollDivY, songScrollDivWidth, songScrollDivHeight );
 rect( songPinDivX, songPinDivY, songPinDivWidth, songPinDivHeight );
