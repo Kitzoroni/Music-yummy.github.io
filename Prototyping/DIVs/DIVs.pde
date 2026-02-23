@@ -47,10 +47,10 @@ float songVolume2DivY = appHeight * 185 / paperHeight;
 float songVolume2DivWidth = appWidth * 7 / paperWidth;
 float songVolume2DivHeight = appHeight * 6 / paperHeight;
 //
-float DivX = appWidth * ??? / paperWidth;
-float DivY = appHeight * ??? / paperHeight;
-float DivWidth = appWidth * ??? / paperWidth;
-float DivHeight = appHeight * ??? / paperHeight;
+float songPawsDivX = appWidth * 187 / paperWidth;
+float songPawsDivY = appHeight * 115.5 / paperHeight;
+float songPawsDivWidth = appWidth * 28 / paperWidth;
+float songPawsDivHeight = appHeight * 24 / paperHeight;
 //
 float DivX = appWidth *??? / paperWidth;
 float DivY = appHeight * ??? / paperHeight;
