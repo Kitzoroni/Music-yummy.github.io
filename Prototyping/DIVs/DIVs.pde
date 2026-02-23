@@ -5,45 +5,42 @@ println(displayWidth, displayHeight);
 fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
+float DivX = appWidth *??? / paperWidth;
+float DivY = appHeight * ??? / paperHeight;
+float DivWidth = appWidth * ??? / paperWidth;
+float DivHeight = appHeight * ??? / paperHeight;
 //
 int paperWidth = 260;
 int paperHeight = 202;
-float songImageDivX = appWidth * ??? / paperWidth;
-float songImageDivY = appHeight *  ??? / paperHeight;
-float songImageDivWidth = appWidth * ??? / paperWidth;
-float songImageDivHeight = appHeight * ??? / paperHeight;
-
-float songLyricsDivX = appWidth * ??? / paperWidth;
-float songLyricsDivY = appHeight *  ??? / paperHeight;
-float songLyricsDivWidth = appWidth * ??? / paperWidth;
-float songLyricsDivHeight = appHeight * ??? / paperHeight;
-
-float songScrollDivX = appWidth * ??? / paperWidth;
-float songScrollDivY = appHeight *  ??? / paperHeight;
-float songScrollDivWidth = appWidth * ??? / paperWidth;
-float songScrollDivHeight = appHeight * ??? / paperHeight;
-
-float songPinDivX = appWidth * ??? / paperWidth;
-float songPinDivY = appHeight *  ??? / paperHeight;
-float songPinDivWidth = appWidth * ??? / paperWidth;
-float songPinDivHeight = appHeight * ??? / paperHeight;
-
+float songImageDivX = appWidth * 187 / paperWidth;
+float songImageDivY = appHeight *  28 / paperHeight;
+float songImageDivWidth = appWidth * 56 / paperWidth;
+float songImageDivHeight = appHeight * 60 / paperHeight;
+//
+float songLyricsDivX = appWidth * 117 / paperWidth;
+float songLyricsDivY = appHeight *  31 / paperHeight;
+float songLyricsDivWidth = appWidth * 49 / paperWidth;
+float songLyricsDivHeight = appHeight * 58 / paperHeight;
+//
+float songScrollDivX = appWidth * 96 / paperWidth;
+float songScrollDivY = appHeight *  31 / paperHeight;
+float songScrollDivWidth = appWidth * 7 / paperWidth;
+float songScrollDivHeight = appHeight * 95 / paperHeight;
+//
+float songPinDivX = appWidth * 81 / paperWidth;
+float songPinDivY = appHeight *  26 / paperHeight;
+float songPinDivWidth = appWidth * 7 / paperWidth;
+float songPinDivHeight = appHeight * 6 / paperHeight;
+//
 float lyricsExitDivX = appWidth * ??? / paperWidth;
 float lyricsExitDivY = appHeight *  ??? / paperHeight;
-float lyricsExitDivWidth = appWidth * ??? / paperWidth;
-float lyricsExitDivHeight = appHeight * ??? / paperHeight;
-
-float songImageDivX = appWidth * ??? / paperWidth;
-float songImageDivY = appHeight *  ??? / paperHeight;
-float songImageDivWidth = appWidth * ??? / paperWidth;
-float songImageDivHeight = appHeight * ??? / paperHeight;
-
-float songVolume1DivX = appWidth * ??? / paperWidth;
-float songVolume1DivY = appHeight *  ??? / paperHeight;
-float songVolume1DivWidth = appWidth * ??? / paperWidth;
-float songVolume1DivHeight = appHeight * ??? / paperHeight;
-
-
+float lyricsExitDivWidth = appWidth * 7 / paperWidth;
+float lyricsExitDivHeight = appHeight * 6 / paperHeight;
+//
+float songVolume1DivX = appWidth * 257 / paperWidth;
+float songVolume1DivY = appHeight *  127.5 / paperHeight;
+float songVolume1DivWidth = appWidth * 7 / paperWidth;
+float songVolume1DivHeight = appHeight * 6 / paperHeight;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( songImageDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
