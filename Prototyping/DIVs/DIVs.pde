@@ -94,7 +94,7 @@ float songEar2DivY = appHeight * 12 / paperHeight;
 float songEar2DivWidth = appWidth * 14 / paperWidth;
 float songEar2DivHeight = appHeight * 16 / paperHeight;
 //
-float songNextDivX = appWidth * 243.5 / paperWidth;
+float songNextDivX = appWidth * 237 / paperWidth;
 float songNextDivY = appHeight * 48 / paperHeight;
 float songNextDivWidth = appWidth * 12 / paperWidth;
 float songNextDivHeight = appHeight * 14 / paperHeight;
