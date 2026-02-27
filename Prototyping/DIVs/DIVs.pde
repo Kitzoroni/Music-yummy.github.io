@@ -120,9 +120,19 @@ float songLibraryDivWidth = appWidth *  61 / paperWidth;
 float songLibraryDivHeight = appHeight * 32 / paperHeight;
 //
 float songSong1DivX = appWidth * 0 / paperWidth;
-float songSong1DivY = appHeight * 0 / paperHeight;
+float songSong1DivY = appHeight * 31.1 / paperHeight;
 float songSong1DivWidth = appWidth *  61 / paperWidth;
-float songSong1DivHeight = appHeight * 32 / paperHeight;
+float songSong1DivHeight = appHeight * 21.5 / paperHeight;
+//
+float songSong2DivX = appWidth * 0 / paperWidth;
+float songSong2DivY = appHeight * 52.6 / paperHeight;
+float songSong2DivWidth = appWidth *  61 / paperWidth;
+float songSong2DivHeight = appHeight * 21.5 / paperHeight;
+//
+float songSong3DivX = appWidth * 0 / paperWidth;
+float songSong3DivY = appHeight * 31.1 / paperHeight;
+float songSong3DivWidth = appWidth *  61 / paperWidth;
+float songSong3DivHeight = appHeight * 21.5 / paperHeight;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( songImageDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
@@ -149,3 +159,5 @@ rect( songShuffleDivX, songShuffleDivY, songShuffleDivWidth, songShuffleDivHeigh
 rect( songBarDivX, songBarDivY, songBarDivWidth, songBarDivHeight );
 rect( songLibraryDivX, songLibraryDivY, songLibraryDivWidth, songLibraryDivHeight );
 rect( songSong1DivX, songSong1DivY, songSong1DivWidth, songSong1DivHeight );
+rect( songSong2DivX, songSong2DivY, songSong2DivWidth, songSong2DivHeight );
+rect( songSong3DivX, songSong3DivY, songSong3DivWidth, songSong3DivHeight );
