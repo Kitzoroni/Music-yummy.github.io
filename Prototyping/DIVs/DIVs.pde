@@ -31,8 +31,8 @@ float songPinDivHeight = appHeight * 6 / paperHeight;
 //
 float lyricsExitDivX = appWidth * 166.5 / paperWidth;
 float lyricsExitDivY = appHeight *  24.5 / paperHeight;
-float lyricsExitDivWidth = appWidth * 7 / paperWidth;
-float lyricsExitDivHeight = appHeight * 6 / paperHeight;
+float lyricsExitDivWidth = appWidth * 6 / paperWidth;
+float lyricsExitDivHeight = appHeight * 7 / paperHeight;
 //
 float songVolume1DivX = appWidth * 257 / paperWidth;
 float songVolume1DivY = appHeight *  127.5 / paperHeight;
@@ -51,13 +51,13 @@ float songVolumeDivHeight = appHeight * 41 / paperHeight;
 //
 float songPaw1DivX = appWidth * 187 / paperWidth;
 float songPaw1DivY = appHeight * 115.5 / paperHeight;
-float songPaw1DivWidth = appWidth * 28 / paperWidth;
+float songPaw1DivWidth = appWidth * 14 / paperWidth;
 float songPaw1DivHeight = appHeight * 24 / paperHeight;
 //
 float songPaw2DivX = appWidth * 229 / paperWidth;
 float songPaw2DivY = appHeight * 115.5 / paperHeight;
-float songPaw2DivWidth = appWidth * 28 / paperWidth;
-float songPaw2DivHeight = appHeight * 24 / paperHeight;
+float songPaw2DivWidth = appWidth * 24 / paperWidth;
+float songPaw2DivHeight = appHeight * 28 / paperHeight;
 //
 float songFastDivX = appWidth * 229 / paperWidth;
 float songFastDivY = appHeight * 113.5 / paperHeight;
