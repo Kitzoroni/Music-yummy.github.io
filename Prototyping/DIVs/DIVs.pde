@@ -130,7 +130,7 @@ float songSong2DivWidth = appWidth *  61 / paperWidth;
 float songSong2DivHeight = appHeight * 21.5 / paperHeight;
 //
 float songSong3DivX = appWidth * 0 / paperWidth;
-float songSong3DivY = appHeight * 31.1 / paperHeight;
+float songSong3DivY = appHeight * 74.1 / paperHeight;
 float songSong3DivWidth = appWidth *  61 / paperWidth;
 float songSong3DivHeight = appHeight * 21.5 / paperHeight;
 
