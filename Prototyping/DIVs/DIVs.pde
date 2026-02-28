@@ -10,27 +10,27 @@ int appHeight = displayHeight;
 int paperWidth = 260;
 int paperHeight = 202;
 float songImageDivX = appWidth * 187 / paperWidth;
-float songImageDivY = appHeight *  28 / paperHeight;
-float songImageDivWidth = appWidth * 56 / paperWidth;
-float songImageDivHeight = appHeight * 60 / paperHeight;
+float songImageDivY = appHeight *  31.1 / paperHeight;
+float songImageDivWidth = appWidth * 63 / paperWidth;
+float songImageDivHeight = appHeight * 70 / paperHeight;
 //
-float songLyricsDivX = appWidth * 117 / paperWidth;
-float songLyricsDivY = appHeight *  31 / paperHeight;
-float songLyricsDivWidth = appWidth * 49 / paperWidth;
-float songLyricsDivHeight = appHeight * 149 / paperHeight;
+float songLyricsDivX = appWidth * 89 / paperWidth;
+float songLyricsDivY = appHeight *  31.1 / paperHeight;
+float songLyricsDivWidth = appWidth * 70 / paperWidth;
+float songLyricsDivHeight = appHeight * 159 / paperHeight;
 //
-float songScrollDivX = appWidth * 96 / paperWidth;
-float songScrollDivY = appHeight *  31 / paperHeight;
-float songScrollDivWidth = appWidth * 7 / paperWidth;
-float songScrollDivHeight = appHeight * 160 / paperHeight;
+float songScrollDivX = appWidth * 65 / paperWidth;
+float songScrollDivY = appHeight *  31.1 / paperHeight;
+float songScrollDivWidth = appWidth * 3 / paperWidth;
+float songScrollDivHeight = appHeight * 165 / paperHeight;
 //
-float songPinDivX = appWidth * 81 / paperWidth;
-float songPinDivY = appHeight *  26 / paperHeight;
-float songPinDivWidth = appWidth * 7 / paperWidth;
-float songPinDivHeight = appHeight * 6 / paperHeight;
+float songPinDivX = appWidth * 62 / paperWidth;
+float songPinDivY = appHeight *  0 / paperHeight;
+float songPinDivWidth = appWidth * 6 / paperWidth;
+float songPinDivHeight = appHeight * 7 / paperHeight;
 //
-float lyricsExitDivX = appWidth * 166.5 / paperWidth;
-float lyricsExitDivY = appHeight *  24.5 / paperHeight;
+float lyricsExitDivX = appWidth * 159 / paperWidth;
+float lyricsExitDivY = appHeight *  24 / paperHeight;
 float lyricsExitDivWidth = appWidth * 6 / paperWidth;
 float lyricsExitDivHeight = appHeight * 7 / paperHeight;
 //
@@ -85,14 +85,14 @@ float songLoopDivWidth = appWidth * 12 / paperWidth;
 float songLoopDivHeight = appHeight * 14 / paperHeight;
 //
 float songEar1DivX = appWidth * 187 / paperWidth;
-float songEar1DivY = appHeight * 12 / paperHeight;
-float songEar1DivWidth = appWidth * 14 / paperWidth;
-float songEar1DivHeight = appHeight * 16 / paperHeight;
+float songEar1DivY = appHeight * 14.5 / paperHeight;
+float songEar1DivWidth = appWidth * 21 / paperWidth;
+float songEar1DivHeight = appHeight * 17 / paperHeight;
 //
 float songEar2DivX = appWidth * 229 / paperWidth;
-float songEar2DivY = appHeight * 12 / paperHeight;
-float songEar2DivWidth = appWidth * 14 / paperWidth;
-float songEar2DivHeight = appHeight * 16 / paperHeight;
+float songEar2DivY = appHeight * 14.5 / paperHeight;
+float songEar2DivWidth = appWidth * 21 / paperWidth;
+float songEar2DivHeight = appHeight * 17 / paperHeight;
 //
 float songNextDivX = appWidth * 243 / paperWidth;
 float songNextDivY = appHeight * 40 / paperHeight;
@@ -132,7 +132,12 @@ float songSong2DivHeight = appHeight * 21.5 / paperHeight;
 float songSong3DivX = appWidth * 0 / paperWidth;
 float songSong3DivY = appHeight * 74.1 / paperHeight;
 float songSong3DivWidth = appWidth *  61 / paperWidth;
-float songSong3DivHeight = appHeight * 21.5 / paperHeight;
+float songSong3DivHeight = appHeight * 21.5 / paperHeight;\
+//
+float songSongDivX = appWidth * 0 / paperWidth;
+float songSongDivY = appHeight * 95.6 / paperHeight;
+float songSongDivWidth = appWidth *  61 / paperWidth;
+float songSongDivHeight = appHeight * 115 / paperHeight;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( songImageDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
@@ -161,3 +166,4 @@ rect( songLibraryDivX, songLibraryDivY, songLibraryDivWidth, songLibraryDivHeigh
 rect( songSong1DivX, songSong1DivY, songSong1DivWidth, songSong1DivHeight );
 rect( songSong2DivX, songSong2DivY, songSong2DivWidth, songSong2DivHeight );
 rect( songSong3DivX, songSong3DivY, songSong3DivWidth, songSong3DivHeight );
+rect( songSongDivX, songSongDivY, songSongDivWidth, songSongDivHeight );
