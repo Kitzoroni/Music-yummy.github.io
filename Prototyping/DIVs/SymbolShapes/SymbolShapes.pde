@@ -26,10 +26,10 @@ float muteSymbolDivY2 = DivY +  DivHeight*1/4;
 float muteSymbolDivX3 = DivX + DivWidth*3/4;
 float muteSymbolDivY4 = DivY +  DivHeight*3/4;
 //
-float pinSymbolDivX = 
-float pinSymbolDivY =
-float pinSymbolWidth =
-float pinSymbolHeight =
+float pinSymbolDivX = DivX
+float pinSymbolDivY = DivY
+float pinSymbolWidth = DivX
+float pinSymbolHeight = DivY
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
