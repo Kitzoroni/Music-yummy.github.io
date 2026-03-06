@@ -31,10 +31,10 @@ float nextSymbolDivY = DivY + DivHeight*
 float nextSymbolWidth = DivX + DivWidth*
 float nextSymbolHeight = DivY + DivHeight*
 //
-float backSymbolDivX = DivX + DivWidth*1/4;
-float backSymbolDivY = DivY + DivHeight*1/4;
-float backSymbolWidth = DivX + DivWidth*
-float backSymbolHeight = DivY + DivHeight*
+float backSymbolDivX1 = DivX + DivWidth*1/4;
+float backSymbolDivY2 = DivY + DivHeight*1/4;
+float backSymbolWidth3 = DivX + DivWidth*
+float backSymbolHeight4 = DivY + DivHeight*
 
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
