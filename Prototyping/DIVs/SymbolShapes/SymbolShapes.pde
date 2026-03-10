@@ -21,11 +21,6 @@ float playSymbolDivY4 = DivY +  DivHeight*1/2;
 float playSymbolDivX5 = DivX + DivWidth*1/4;
 float playSymbolDivY6 = DivY +  DivHeight*3/4;
 //
-float muteSymbolDivX1 = DivX + DivWidth*1/4;
-float muteSymbolDivY2 = DivY +  DivHeight*1/4;
-float muteSymbolDivX3 = DivX + DivWidth*3/4;
-float muteSymbolDivY4 = DivY +  DivHeight*3/4;
-//
 float nextSymbolDivX = DivX + DivWidth*
 float nextSymbolDivY = DivY + DivHeight*
 float nextSymbolWidth = DivX + DivWidth*
@@ -39,10 +34,10 @@ float backSymbolX5 = DivX + DivWidth*1/4;
 float backSymbolY6 = DivY + DivHeight*3/4;
 float backSymbolX7 = DivX + DivWidth*3/8;
 
+
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
 //
 rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
 triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6);
-line( muteSymbolDivX1, muteSymbolDivY2, muteSymbolDivX3, muteSymbolDivY4 );
