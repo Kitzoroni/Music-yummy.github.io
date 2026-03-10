@@ -33,7 +33,14 @@ float backSymbolHeight4 = DivY + DivHeight*1/4;
 float backSymbolX5 = DivX + DivWidth*1/4;
 float backSymbolY6 = DivY + DivHeight*3/4;
 float backSymbolX7 = DivX + DivWidth*3/8; 
-float backSymbolX8 = DivY + DivHeight*3/4;
+float backSymbolY8 = DivY + DivHeight*3/4;
+float backSymbolX9 = DivX + DivWidth*2/4;
+float backSymbolY10 = DivY + DivHeight*1/2;
+float backSymbolX11 = DivX + DivWidth*5/8;
+float backSymbolY12 = DivY + DivHeight*1/4;
+float backSymbolX13 = DivX + DivWidth*5/8;
+float backSymbolY14 = DivY + DivHeight*3/4;
+//
 
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
@@ -42,3 +49,4 @@ rect( DivX, DivY, DivWidth, DivHeight );
 rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
 triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
 rect( backSymbolDivX1, backSymbolDivY2, backSymbolWidth3, backSymbolHeight4, backSymbolX5, backSymbolX5, backSymbolX5 );
+triangle( backSymbolY6, backSymbolX7, backSymbolY8, backSymbolX9, backSymbolX9, backSymbolY10, backSymbolX11, backSymbolY12, backSymbolX13, backSymbolY14 );
