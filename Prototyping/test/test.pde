@@ -54,15 +54,13 @@ float nextSymbolDivY2 = DivY + DivHeight*1/4;
 float nextSymbolDivX3 = DivX + DivWidth*2/4;
 float nextSymbolDivY4 = DivY + DivHeight*1/2;
 float nextSymbolDivX5 = DivX + DivWidth*1/4;
-float nextSymbolDivY6 = DivY + DivHeight*3/4;
+float nextSymbolDivY6 = DivY + DivHeight*3/4; 
 float nextSymbolDivX7 = DivX + DivWidth*1/4;
 float nextSymbolDivY8 = DivY + DivHeight*1/2;
-float nextSymbolDivWidth9 = DivX + DivWidth*5/8;
-float nextSymbolDivHeight10 = DivY + DivHeight*1/4;
-float nextSymbolDivWidth11 = DivX + DivWidth*5/8;
-float nextSymbolDivHeight12 = DivY + DivHeight*3/4;
-float nextSymbolDivWidth13 = DivWidth*1/2;
-float nextSymbolDivHeight14 = DivHeight*3/4;
+float nextSymbolDivWidth9 = DivWidth*5/8;
+float nextSymbolDivHeight10 = DivHeight*1/4;
+
+
 
 //DIVsrect( DivX, DivY, DivWidth, DivHeight );
 //rect( DivX, DivY, DivWidth, DivHeight );
@@ -73,4 +71,4 @@ float nextSymbolDivHeight14 = DivHeight*3/4;
 //triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
 //triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
 triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
-rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10, nextSymbolDivWidth11, nextSymbolDivHeight12, nextSymbolDivWidth13, nextSymbolDivHeight14 );
+rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
