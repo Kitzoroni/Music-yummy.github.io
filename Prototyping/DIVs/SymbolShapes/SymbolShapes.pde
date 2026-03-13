@@ -65,29 +65,21 @@ float backSymbolDivY8 =  DivY + DivHeight*1/4;
 float backSymbolDivWidth9 = DivWidth*1/8;
 float backSymbolDivHeight10 = DivHeight*1/2;
 //
-float pauseSymbolDivX1
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
-float
+float pauseSymbolDivX1 = DivX + DivWidth*1/4;
+float pauseSymbolDivY2 = DivY + DivHeight*1/4;
+float pauseSymbolDivWidth3 = DivWidth*1/8;
+float pauseSymbolDivHeight4 = DivHeight*2/4;
+float pauseSymbolDivX5 = DivX + DivWidth*5/8;
+float pauseSymbolDivY6 = DivY + DivHeight*1/4;
+float pauseSymbolDivWidth7 = DivWidth*1/8;
+float pauseSymbolDivHeight8 = DivHeight*2/4;
 
 
 
 
-rect( DivX, DivY, DivWidth, DivHeight );
+
 //rect( DivX, DivY, DivWidth, DivHeight );
-//rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
+rect( DivX, DivY, DivWidth, DivHeight );
 //triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
 //triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
 //triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
@@ -97,3 +89,5 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
 //triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
 //triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
+rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
+rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
