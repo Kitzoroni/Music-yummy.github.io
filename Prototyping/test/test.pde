@@ -34,13 +34,13 @@ float rewindSymbolDivY2 = DivY + DivHeight*1/4;
 float rewindSymbolDivX3 = DivX + DivWidth*1/4;
 float rewindSymbolDivY4 = DivY + DivHeight*1/2;
 float rewindSymbolDivX5 = DivX + DivWidth*1/2;
-float rewindSymbolDivY6 = DivY + DivHeight*3/4; sdfs
+float rewindSymbolDivY6 = DivY + DivHeight*3/4; 
 float rewindSymbolDivX7 = DivX + DivWidth*3/4;
 float rewindSymbolDivY8= DivY + DivHeight*1/4;
 float rewindSymbolDivX9= DivX + DivWidth*1/2;
-float rewindSymbolDiv1 = DivY + DivHeight*1/2;
-float rewindSymbolDivX12 = DivX + DivWidth*3/4; 
-float rewindSymbolDivY= DivY+ DivHeight3/4;
+float rewindSymbolDivY10 = DivY + DivHeight*1/2;
+float rewindSymbolDivX11 = DivX + DivWidth*3/4; 
+float rewindSymbolDivY12 = DivY+ DivHeight*3/4;
 
 //
 float nextSymbolDivX1 = DivX + DivWidth*1/4;
@@ -77,4 +77,4 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
 //rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
 triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
-triangle( 
+triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
