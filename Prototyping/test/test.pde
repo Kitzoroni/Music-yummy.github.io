@@ -27,7 +27,7 @@ float backSymbolWidth3 = DivX + DivWidth*3/8;
 float backSymbolHeight4 = DivY + DivHeight*1/4;
 float backSymbolX5 = DivX + DivWidth*1/4;
 float backSymbolY6 = DivY + DivHeight*3/4;
-float backSymbolX7 = DivX + DivWidth*3/8; 
+float backSymbolX7 = DivX + DivWidth*3/8;
 float backSymbolY8 = DivY + DivHeight*3/4;
 float backSymbolX9 = DivX + DivWidth*2/4;
 float backSymbolY10 = DivY + DivHeight*1/2;
@@ -54,12 +54,11 @@ float nextSymbolDivY2 = DivY + DivHeight*1/4;
 float nextSymbolDivX3 = DivX + DivWidth*2/4;
 float nextSymbolDivY4 = DivY + DivHeight*1/2;
 float nextSymbolDivX5 = DivX + DivWidth*1/4;
-float nextSymbolDivY6 = DivY + DivHeight*3/4; 
-float nextSymbolDivX7 = DivX + DivWidth*1/4;
-float nextSymbolDivY8 = DivY + DivHeight*1/2;
-float nextSymbolDivWidth9 = DivWidth*5/8;
-float nextSymbolDivHeight10 = DivHeight*1/4;
-
+float nextSymbolDivY6 = DivY + DivHeight*3/4;
+float nextSymbolDivX7 = DivX + DivWidth*1/2;
+float nextSymbolDivY8 =  DivY + DivHeight*1/4;
+float nextSymbolDivWidth9 = DivWidth*3/4;
+float nextSymbolDivHeight10 = DivHeight*1/2;
 
 
 //DIVsrect( DivX, DivY, DivWidth, DivHeight );
