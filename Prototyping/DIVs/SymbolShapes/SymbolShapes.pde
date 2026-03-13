@@ -73,6 +73,27 @@ float pauseSymbolDivX5 = DivX + DivWidth*5/8;
 float pauseSymbolDivY6 = DivY + DivHeight*1/4;
 float pauseSymbolDivWidth7 = DivWidth*1/8;
 float pauseSymbolDivHeight8 = DivHeight*2/4;
+//
+float exitSymbolDivX1 = DivX + DivWidth*1/4;
+float exitSymbolDivY2 = DivY + DivHeight*1/4;
+float exitSymbolDivX3 = DivX + DivWidth*3/4;
+float exitSymbolDivY4 = DivY + DivHeight*1/4;
+float exitSymbolDivX5 = DivX + DivWidth*1/4;
+float exitSymbolDivY6 = DivY + DivHeight*3/4;
+float exitSymbolDivX7 = DivX + DivWidth*3/4;
+float exitSymbolDivY8 = DivY + DivHeight*1/4;
+float exitSymbolDivX9 = DivX + DivWidth*1/4;
+float exitSymbolDivY10 = DivY + DivHeight*1/4;
+float exitSymbolDivX11 = DivX + DivWidth*3/4;
+float exitSymbolDivY12= DivY + DivHeight*3/4;
+//
+float pinSymbolDivX1 = DivX + DivWidth*1/2;
+float pinSymbolDivY2 = DivY + DivHeight*1/4;
+float pinSymbolDivX3 = DivX + DivWidth*3/8;
+float pinSymbolDivY4 = DivY + DivHeight*1/4;
+float pinSymbolDivX5 = DivX + DivWidth*5/8;
+float pinSymbolDivY6 = DivX + DivHeight*1/2;
+
 
 
 
@@ -89,5 +110,8 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
 //triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
 //triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
-rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
-rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
+//rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
+//rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
+//triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
+//triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
+triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
