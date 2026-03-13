@@ -64,7 +64,6 @@ float backSymbolDivX7 = DivX + DivWidth*1/4;
 float backSymbolDivY8 =  DivY + DivHeight*1/4;
 float backSymbolDivWidth9 = DivWidth*1/8;
 float backSymbolDivHeight10 = DivHeight*1/2;
-
 //
 rect( DivX, DivY, DivWidth, DivHeight );
 //rect( DivX, DivY, DivWidth, DivHeight );
