@@ -18,11 +18,11 @@ float playSymbolDivY6 = DivY +  DivHeight*3/4;
 //
 float fastSymbolDivX1 = DivX + DivWidth*1/4;
 float fastSymbolDivY2 = DivY + DivHeight*1/4;
-float fastSymbolDivX3 = DivX + DivWidth*1/4;
+float fastSymbolDivX3 = DivX + DivWidth*2/4;
 float fastSymbolDivY4 = DivY + DivHeight*1/2;
 float fastSymbolDivX5 = DivX + DivWidth*1/4;
-float fastSymbolDivY6 = DivY + DivHeight*3/4;
-float fastSymbolDivX7 = DivX + DivWidth*1/2;
+float fastSymbolDivY6 = DivY + DivHeight*3/4; 
+float fastSymbolDivX7 = DivX + DivWidth*1/2; 
 float fastSymbolDivY8 = DivY + DivHeight*1/4;
 float fastSymbolDivX9 = DivX + DivWidth*3/4;
 float fastSymbolDivY10 = DivY + DivHeight*1/2;
@@ -52,13 +52,12 @@ float backSymbolDivWidth9 = DivWidth*1/8;
 float backSymbolDivHeight10 = DivHeight*1/2;
 
 //
-//DIVsrect( DivX, DivY, DivWidth, DivHeight );
+rect( DivX, DivY, DivWidth, DivHeight );
 //rect( DivX, DivY, DivWidth, DivHeight );
 //rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
 //triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
-//
-//triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
-//triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
+triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
+triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
 //triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
 //rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
 //triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
