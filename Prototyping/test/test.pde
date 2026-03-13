@@ -57,7 +57,7 @@ float nextSymbolDivX5 = DivX + DivWidth*1/4;
 float nextSymbolDivY6 = DivY + DivHeight*3/4; 
 float nextSymbolDivX7 = DivX + DivWidth*1/2;
 float nextSymbolDivY8 =  DivY + DivHeight*1/4;
-float nextSymbolDivWidth9 = DivWidth*5/8;
+float nextSymbolDivWidth9 = DivWidth*1/8;
 float nextSymbolDivHeight10 = DivHeight*1/2;
 
 //DIVsrect( DivX, DivY, DivWidth, DivHeight );
