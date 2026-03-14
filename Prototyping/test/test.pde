@@ -97,9 +97,20 @@ float pinSymbolDivX7 = DivX + DivWidth*1/4;
 float pinSymbolDivY8 = DivY + DivHeight*1/2;
 float pinSymbolDivWidth9 = DivWidth*1/2;
 float pinSymbolDivHeight10 = DivHeight*1/2;
-
-
-
+//
+float downloadSymbolDivX1 = DivX + DivWidth*1/2;
+float downloadSymbolDivY2 = DivY + DivHeight*1/4;
+float downloadSymbolDivX3 = DivX + DivWidth*1/4;
+float downloadSymbolDivY4 = DivY + DivHeight*1/2;
+float downloadSymbolDivX5 = DivX + DivWidth*3/4;
+float downloadSymbolDivY6 = DivY + DivHeight*1/2;
+float downloadSymbolDivX7 = DivX + DivWidth*3/8;
+float downloadSymbolDivY8 = DivY + DivHeight*1/2;
+float downloadSymbolDivWidth9 = DivWidth*2/8;
+float downloadSymbolDivHeight10 = DivHeight*1/2;
+float downloadSymbolDivX11 = DivX + DivWidth*2/8;
+float downloadSymbolDivY12 = DivY + DivHeight*1/4;
+float downloadSymbolDivWidth13 = DivWidth*3/4;
 
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
@@ -116,5 +127,8 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
 //triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
 //triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
-triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
-rect ( pinSymbolDivX7, pinSymbolDivY8, pinSymbolDivWidth9, pinSymbolDivHeight10 );
+//triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
+//rect ( pinSymbolDivX7, pinSymbolDivY8, pinSymbolDivWidth9, pinSymbolDivHeight10 );
+triangle ( downloadSymbolDivX1, downloadSymbolDivY2, downloadSymbolDivX3, downloadSymbolDivY4, downloadSymbolDivX5, downloadSymbolDivY6 );
+rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
+line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13 );
