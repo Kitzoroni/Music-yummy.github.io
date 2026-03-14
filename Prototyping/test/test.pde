@@ -109,7 +109,7 @@ float downloadSymbolDivY8 = DivY + DivHeight*1/2;
 float downloadSymbolDivWidth9 = DivWidth*2/8;
 float downloadSymbolDivHeight10 = DivHeight*1/2;
 float downloadSymbolDivX11 = DivX + DivWidth*1/4;
-float downloadSymbolDivY12 = DivY + DivHeight*1/4; oopsie did it upside down by accident teehee have to redo it all now
+float downloadSymbolDivY12 = DivY + DivHeight*1/4; have to redo
 float downloadSymbolDivWidth13 = DivWidth*1/2;
 float downloadSymbolDivHeight14 = DivHeight*3/4;
 
