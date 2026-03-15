@@ -155,11 +155,11 @@ float shuffleSymbolDivY14 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX15 = DivX + DivWidth*3/4; 
 float shuffleSymbolDivY16 = DivY + DivHeight*1/4; 
 float shuffleSymbolDivX17 = DivX + DivWidth*3/4; 
-float shuffleSymbolDivY18 = DivY + DivHeight*0.3;
+float shuffleSymbolDivY18 = DivY + DivHeight*0.4;
 float shuffleSymbolDivX19 = DivX + DivWidth*7/8;
 float shuffleSymbolDivY20 = DivY + DivHeight*1/4;
 float shuffleSymbolDivX21 = DivX + DivWidth*3/4;
-float shuffleSymbolDivY22 = DivY + DivHeight*1/4.5; 
+float shuffleSymbolDivY22 = DivY + DivHeight*1/7.2; 
 
 
 
