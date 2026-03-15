@@ -165,7 +165,7 @@ float shuffleSymbolDivY24 = DivY + DivHeight*0.88;
 float shuffleSymbolDivX25 = DivX + DivWidth*7/8;
 float shuffleSymbolDivY26 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX27 = DivX + DivWidth*3/4;
-float shuffleSymbolDivY28 = DivY + DivHeight*0.6; 
+float shuffleSymbolDivY28 = DivY + DivHeight*0.625; 
 
 
 
