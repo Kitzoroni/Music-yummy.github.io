@@ -117,10 +117,16 @@ float heartSymbolDivX1 = DivX + DivWidth*1/4;
 float heartSymbolDivY2 = DivY + DivHeight*1/4;
 float heartSymbolDivX3 = DivX + DivWidth*1/2;
 float heartSymbolDivY4 = DivY + DivHeight*1/2;
-//float heartSymbolDivX5 = DivX + DivWidth*1/4;
-//float heartSymbolDivY6 = DivY + DivHeight*1/4;
-//float heartSymbolDivX7 = DivX + DivWidth*1/4;
-//float heartSymbolDivY8 = DivY + DivHeight*1/4;
+float heartSymbolDivX5 = DivX + DivWidth*1/4;
+float heartSymbolDivY6 = DivY + DivHeight*1/4;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivY8 = DivY + DivHeight*1/2;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX7 = DivX + DivWidth*0;
 
 
 
@@ -147,3 +153,4 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
 //line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13, downloadSymbolDivHeight14 );
 line ( heartSymbolDivX1, heartSymbolDivY2, heartSymbolDivX3, heartSymbolDivY4 );
+line ( heartSymbolDivX5, heartSymbolDivY6, heartSymbolDivX7, heartSymbolDivY8 );
