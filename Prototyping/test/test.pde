@@ -154,6 +154,12 @@ float shuffleSymbolDivX13 = DivX + DivWidth*1/4;
 float shuffleSymbolDivY14 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX15 = DivX + DivWidth*3/4;
 float shuffleSymbolDivY16 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX17 = DivX + DivWidth*;
+float shuffleSymbolDivY18 = DivY + DivHeight*;
+float shuffleSymbolDivX19 = DivX + DivWidth*;
+float shuffleSymbolDivY20 = DivY + DivHeight*;
+float shuffleSymbolDivX21 = DivX + DivWidth*;
+float shuffleSymbolDivY22 = DivY + DivHeight*;
 
 
 
@@ -193,3 +199,4 @@ line ( shuffleSymbolDivX1, shuffleSymbolDivY2, shuffleSymbolDivX3, shuffleSymbol
 line ( shuffleSymbolDivX5, shuffleSymbolDivY6, shuffleSymbolDivX7, shuffleSymbolDivY8 );
 line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 ); 
 line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
+triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
