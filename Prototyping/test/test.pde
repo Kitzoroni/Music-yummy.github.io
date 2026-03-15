@@ -121,12 +121,12 @@ float heartSymbolDivX5 = DivX + DivWidth*1/4;
 float heartSymbolDivY6 = DivY + DivHeight*1/4;
 float heartSymbolDivX7 = DivX + DivWidth*0;
 float heartSymbolDivY8 = DivY + DivHeight*1/2;
-float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivX9 = DivX + DivWidth*0;
+float heartSymbolDivY10 = DivY + DivHeight*0;
+float heartSymbolDivX11 = DivX + DivWidth*0;
+float heartSymbolDivY12 = DivY + DivHeight*0;
+float heartSymbolDivX13 = DivX + DivWidth*0;
+float heartSymbolDivY14 = DivY + DivHeight*0;
 
 
 
