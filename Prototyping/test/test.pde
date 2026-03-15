@@ -113,7 +113,13 @@ float downloadSymbolDivY12 = DivY + DivHeight*1/4;
 float downloadSymbolDivWidth13 = DivWidth*3/4;
 float downloadSymbolDivHeight14 = DivHeight*3/4;
 //
-float heartSymbolDiv
+float heartSymbolDivX1 = DivX + DivWidth*1/2;
+float heartSymbolDivY2 = DivY + DivHeight*1/2;
+float heartSymbolDivX3 = DivX + DivHeight*1/4;
+float heartSymbolDivY4 = DivY + DivWidth*1/4;
+
+
+
 
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
@@ -135,3 +141,4 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //triangle ( downloadSymbolDivX1, downloadSymbolDivY2, downloadSymbolDivX3, downloadSymbolDivY4, downloadSymbolDivX5, downloadSymbolDivY6 );
 //rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
 //line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13, downloadSymbolDivHeight14 );
+line ( heartSymbolDivX1, heartSymbolDivY2, heartSymbolDivX3, heartSymbolDivY4 );
