@@ -137,6 +137,27 @@ float heartSymbolDivX21 = DivX + DivWidth*3/4;
 float heartSymbolDivY22 = DivY + DivHeight*1/4;
 float heartSymbolDivX23 = DivX + DivWidth*1/2;
 float heartSymbolDivY24 = DivY + DivHeight*1/2;
+//
+float shuffleSymbolDivX1 = DivX + DivWidth*0;
+float shuffleSymbolDivY2 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX3 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY4 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX5 = DivWidth + DivWidth*1/4;
+float shuffleSymbolDivY6 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX7= DivX + DivWidth*3/4;
+float shuffleSymbolDivY8 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX9 = DivX + DivWidth*;
+float shuffleSymbolDivY10 = DivY + DivHeight*;
+float shuffleSymbolDivX11 = DivX + DivWidth*;
+float shuffleSymbolDivY12 = DivY + DivHeight*;
+float shuffleSymbolDivX13 = DivX + DivWidth*;
+float shuffleSymbolDivY14 = DivY + DivHeight*;
+float shuffleSymbolDivX15 = DivX + DivWidth*;
+float shuffleSymbolDivY16 = DivY + DivHeight*;
+
+
+
+
 
 
 
