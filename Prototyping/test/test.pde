@@ -145,15 +145,15 @@ float shuffleSymbolDivY4 = DivY + DivHeight*1/4;
 float shuffleSymbolDivX5 = DivWidth + DivWidth*1/4;
 float shuffleSymbolDivY6 = DivY + DivHeight*1/2;
 float shuffleSymbolDivX7= DivX + DivWidth*1/4;
-float shuffleSymbolDivY8 = DivY + DivHeight*1/4;
-//float shuffleSymbolDivX9 = DivX + DivWidth*;
-//float shuffleSymbolDivY10 = DivY + DivHeight*;
-//float shuffleSymbolDivX11 = DivX + DivWidth*;
-//float shuffleSymbolDivY12 = DivY + DivHeight*;
-//float shuffleSymbolDivX13 = DivX + DivWidth*;
-//float shuffleSymbolDivY14 = DivY + DivHeight*;
-//float shuffleSymbolDivX15 = DivX + DivWidth*;
-//float shuffleSymbolDivY16 = DivY + DivHeight*;
+float shuffleSymbolDivY8 = DivY + DivHeight*1/4; 
+float shuffleSymbolDivX9 = DivX + DivWidth*0;
+float shuffleSymbolDivY10 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX11 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY12 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX13 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY14 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX15 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY16 = DivY + DivHeight*1/4;
 
 
 
@@ -191,5 +191,5 @@ rect( DivX, DivY, DivWidth, DivHeight );
 //line ( heartSymbolDivX21, heartSymbolDivY22, heartSymbolDivX23, heartSymbolDivY24 );
 line ( shuffleSymbolDivX1, shuffleSymbolDivY2, shuffleSymbolDivX3, shuffleSymbolDivY4 );
 line ( shuffleSymbolDivX5, shuffleSymbolDivY6, shuffleSymbolDivX7, shuffleSymbolDivY8 );
-//line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 ); 
-//line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
+line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 ); 
+line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
