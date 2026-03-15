@@ -120,23 +120,23 @@ float heartSymbolDivY4 = DivY + DivHeight*1/2;
 float heartSymbolDivX5 = DivX + DivWidth*1/4;
 float heartSymbolDivY6 = DivY + DivHeight*1/4;
 float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivY8 = DivY + DivHeight*1/2; 
+float heartSymbolDivY8 = DivY + DivHeight*1/2;  
 float heartSymbolDivX9 = DivX + DivWidth*0; 
 float heartSymbolDivY10 = DivY + DivHeight*1/2;
 float heartSymbolDivX11 = DivX + DivWidth*1/2;
 float heartSymbolDivY12 = DivY + DivHeight*1;  
-float heartSymbolDivX13 = DivX + DivWidth*1;
-float heartSymbolDivY14 = DivY + DivHeight*1/2; 
+float heartSymbolDivX13 = DivX + DivWidth*1/2;
+float heartSymbolDivY14 = DivY + DivHeight*1; 
 float heartSymbolDivX15 = DivX + DivWidth*1;
 float heartSymbolDivY16 = DivY + DivHeight*1/2; 
-float heartSymbolDivX17 = DivX + DivWidth*3/4;
-float heartSymbolDivY18 = DivY + DivHeight*3/4;
-float heartSymbolDivX19 = DivX + DivWidth*1/4;
-float heartSymbolDivY20 = DivY + DivHeight*3/4;
-float heartSymbolDivX21 = DivX + DivWidth*1/4;
-float heartSymbolDivY22 = DivY + DivHeight*1/2;
-float heartSymbolDivX23 = DivX + DivWidth*3/2;
-float heartSymbolDivY24 = DivY + DivHeight*1/4;
+float heartSymbolDivX17 = DivX + DivWidth*1;
+float heartSymbolDivY18 = DivY + DivHeight*1/2;
+float heartSymbolDivX19 = DivX + DivWidth*3/4;
+float heartSymbolDivY20 = DivY + DivHeight*1/4;
+float heartSymbolDivX21 = DivX + DivWidth*3/4; 
+float heartSymbolDivY22 = DivY + DivHeight*1/4;
+float heartSymbolDivX23 = DivX + DivWidth*1/2;
+float heartSymbolDivY24 = DivY + DivHeight*1/2;
 
 
 
