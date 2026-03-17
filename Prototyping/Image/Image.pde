@@ -19,4 +19,5 @@ String open = "/";
 String pathway = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open + imageName + fileExtension;
 //
 println(pathway);
-//PImage image1 = loadImage( );
+PImage image1 = loadImage( pathway );
+image(image1);
