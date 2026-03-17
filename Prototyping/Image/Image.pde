@@ -8,7 +8,7 @@ String upArrow = "..";
 String dependenciesFolder = "Dependencies/";
 String imagesFolder = "Images/";
 String imageName = "unknownSong";
-String imageName2 = "";
+String imageName2 = "jigging";
 String imageName3 = "";
 String fileExtension = ".jpg";
 String open = "/";
@@ -19,6 +19,7 @@ String open = "/";
  - See Relative Pathway: Dependencies\Images
  */
 String imageDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open;
+String pathway, pathway2, pathway3
 String pathway = imageDirectory + imageName + fileExtension;
 String pathway2 = imageDirectory + imageName + fileExtension;
 String pathway3 = imageDirectory + imageName + fileExtension;
