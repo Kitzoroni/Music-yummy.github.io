@@ -16,6 +16,7 @@ String open = "/";
 - See Absolute Pathway: C:\Users\e.padilla\Downloads\Dependencies\Images 
  - See Relative Pathway: Dependencies/Images
  */
-String pathway = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open + imagesName + fileExtension;
+String pathway = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open + imageName + fileExtension;
 //
-PImage image1 = loadImage( );
+println(pathway);
+//PImage image1 = loadImage( );
