@@ -12,7 +12,10 @@ String fileExtension = ".jpg";
 String open = "/";
 //
 //Concatenation
-//See C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies
-String pathway = ;
+/*
+- See Absolute Pathway: C:\Users\e.padilla\Downloads\Dependencies\Images 
+ - See Relative Pathway: Dependencies/Images
+ */
+String pathway = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open + imagesName + fileExtension;
 //
 PImage image1 = loadImage( );
