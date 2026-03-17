@@ -22,9 +22,13 @@ String imageDirectory = upArrow + open + upArrow + open + dependenciesFolder + o
 String pathway = imageDirectory + imageName + fileExtension;
 String pathway2 = imageDirectory + imageName + fileExtension;
 String pathway3 = imageDirectory + imageName + fileExtension;
-
+//println(pathway);
 //
-println(pathway);
-PImage image1 = loadImage( pathway );
+PImage image, image2, image3;
+image = loadImage( pathway );
+image2 = loadImage( pathway2 );
+image3 = loadImage( pathway3 );
 //
-image(image1, 0, 0);
+image(image, 0, 0);
+image(image2, 0, 0);
+image(image3, 0, 0);
