@@ -4,11 +4,11 @@
 //Display
 fullScreen();
 //
-String upArrow = ". ./ . ./";
+String upArrow = "../../";
 String dependenciesFolder = "Dependencies/";
 String imagesFolder = "Images/";
 String imageName = "unknownSong";
-String fileExtension = "jpg";
+String fileExtension = ".jpg";
 String open = "/";
 //
 //Concatenation
