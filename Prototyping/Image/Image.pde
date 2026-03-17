@@ -8,6 +8,8 @@ String upArrow = "..";
 String dependenciesFolder = "Dependencies/";
 String imagesFolder = "Images/";
 String imageName = "unknownSong";
+String imageName2 = "";
+String imageName3 = "";
 String fileExtension = ".jpg";
 String open = "/";
 //
