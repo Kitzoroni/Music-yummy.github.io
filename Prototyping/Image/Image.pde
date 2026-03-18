@@ -8,21 +8,23 @@ String upArrow = "..";
 String dependenciesFolder = "Dependencies/";
 String imagesFolder = "Images/";
 String imageName = "unknownSong";
-String imageName2 = "jigging";
-String imageName3 = "";
+String imageName2 = "eep";
+String imageName3 = "foryouSong";
 String fileExtension = ".jpg";
 String open = "/";
 //
 //Concatenation
+//Note, Cut Out, See Absolute Pathway:
+//See Relative Pathway: Dependencies\Images
 /*
-- See Absolute Pathway: C:\Users\e.padilla\Downloads\Dependencies\Images 
+- See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Images
+
  - See Relative Pathway: Dependencies\Images
  */
 String imageDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open;
-String pathway, pathway2, pathway3
 String pathway = imageDirectory + imageName + fileExtension;
-String pathway2 = imageDirectory + imageName + fileExtension;
-String pathway3 = imageDirectory + imageName + fileExtension;
+String pathway2 = imageDirectory + imageName2 + fileExtension;
+String pathway3 = imageDirectory + imageName3 + fileExtension;
 //println(pathway);
 //
 PImage image, image2, image3;
