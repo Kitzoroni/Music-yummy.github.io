@@ -49,3 +49,4 @@ float imageDivHeight = appHeight*1.5/5;
 
 
 //Image: Aspect Ratio Algorithm
+//Ternary Operator for Aspect Ratio
