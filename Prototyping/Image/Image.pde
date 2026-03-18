@@ -34,10 +34,6 @@ image3 = loadImage( pathway3 );
 int imageWidth = 300;
 int imageHeight = 300;
 //
-image(image, 0, 0);
-image(image2, 0, 0);
-image(image3, 0, 0);
-//
 //Population: DOVs
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberofButtons;
@@ -50,3 +46,10 @@ float imageDivHeight = appHeight*1.5/5;
 
 //Image: Aspect Ratio Algorithm
 //Ternary Operator for Aspect Ratio
+
+//Div: Image
+rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+//
+image(image, 0, 0);
+image(image2, 0, 0);
+image(image3, 0, 0);
