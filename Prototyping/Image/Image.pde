@@ -8,7 +8,7 @@ String upArrow = "..";
 String dependenciesFolder = "Dependencies/";
 String imagesFolder = "Images/";
 String imageName = "unknownSong";
-String imageName2 = "eep";
+String imageName2 = "catserenadeSong";
 String imageName3 = "foryouSong";
 String fileExtension = ".jpg";
 String open = "/";
@@ -31,7 +31,21 @@ PImage image, image2, image3;
 image = loadImage( pathway );
 image2 = loadImage( pathway2 );
 image3 = loadImage( pathway3 );
+int imageWidth = 300;
+int imageHeight = 300;
 //
 image(image, 0, 0);
 image(image2, 0, 0);
 image(image3, 0, 0);
+//
+//Population: DOVs
+int numberOfButtons = 11;
+int widthOfButton = appWidth/numberofButtons;
+int beginningButtonSpace = widthOfButton;
+float imageDivX = beginningButtonSpace;  
+float imageDivY = appHeight*4.5/20;  
+float imageDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
+float imageDivHeight = appHeight*1.5/5;
+
+
+//Image: Aspect Ratio Algorithm
