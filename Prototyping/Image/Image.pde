@@ -49,13 +49,13 @@ println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
 float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ? float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 println(imageAspectRatio_GreatOne);
-float imageWidthAdjusted = imageDivWidth;
-float imageHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageWidthAdjusted * imageAspectRatio_GreatOne : imageWidthAdjusted / imageAspectRatio_GreatOne ;
+float imageDivWidthAdjusted = imageDivWidth;
+float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageWidthAdjusted * imageAspectRatio_GreatOne : imageWidthAdjusted / imageAspectRatio_GreatOne ;
 
 //Div: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //
-image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeight);
+image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
 image(image2, 0, 0);
 image(image3, 0, 0);
 //image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
