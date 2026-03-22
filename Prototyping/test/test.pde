@@ -13,7 +13,7 @@ String imageName = "unknownSong";
 String imageName2 = "catserenadeSong";
 String imageName3 = "foryouSong";
 String fileExtension = ".jpg";
-String Open = "/";
+String open = "/";
 //
 //Concatenation
 //Note, Cut Out, See Absolute Pathway:
