@@ -3,6 +3,8 @@
 //
 //Display
 fullScreen();
+int appWidth = displayWidth;
+int appHeight = displayHeight;
 //
 String upArrow = "..";
 String dependenciesFolder = "Dependencies";
