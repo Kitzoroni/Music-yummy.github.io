@@ -74,44 +74,137 @@ float pauseSymbolDivY6 = DivY + DivHeight*1/4;
 float pauseSymbolDivWidth7 = DivWidth*1/8;
 float pauseSymbolDivHeight8 = DivHeight*2/4;
 //
-float exitSymbolDivX1 = DivX + DivWidth*1/4;
+float exitSymbolDivX1 = DivX + DivWidth*3/4;
 float exitSymbolDivY2 = DivY + DivHeight*1/4;
-float exitSymbolDivX3 = DivX + DivWidth*3/4;
+float exitSymbolDivX3 = DivX + DivWidth*1/4;
 float exitSymbolDivY4 = DivY + DivHeight*1/4;
 float exitSymbolDivX5 = DivX + DivWidth*1/4;
 float exitSymbolDivY6 = DivY + DivHeight*3/4;
 float exitSymbolDivX7 = DivX + DivWidth*3/4;
 float exitSymbolDivY8 = DivY + DivHeight*1/4;
-float exitSymbolDivX9 = DivX + DivWidth*1/4;
-float exitSymbolDivY10 = DivY + DivHeight*1/4;
-float exitSymbolDivX11 = DivX + DivWidth*3/4;
+float exitSymbolDivX9 = DivX + DivWidth*3/4;
+float exitSymbolDivY10 = DivY + DivHeight*3/4;
+float exitSymbolDivX11 = DivX + DivWidth*1/4;
 float exitSymbolDivY12= DivY + DivHeight*3/4;
 //
 float pinSymbolDivX1 = DivX + DivWidth*1/2;
 float pinSymbolDivY2 = DivY + DivHeight*1/4;
 float pinSymbolDivX3 = DivX + DivWidth*3/8;
-float pinSymbolDivY4 = DivY + DivHeight*1/4;
+float pinSymbolDivY4 = DivY + DivHeight*1/2;
 float pinSymbolDivX5 = DivX + DivWidth*5/8;
-float pinSymbolDivY6 = DivX + DivHeight*1/2;
+float pinSymbolDivY6 = DivY + DivHeight*1/2;
+float pinSymbolDivX7 = DivX + DivWidth*1/4;
+float pinSymbolDivY8 = DivY + DivHeight*1/2;
+float pinSymbolDivWidth9 = DivWidth*1/2;
+float pinSymbolDivHeight10 = DivHeight*1/2;
+//
+float downloadSymbolDivX1 = DivX + DivWidth*1/2;
+float downloadSymbolDivY2 = DivY + DivHeight*3/4;
+float downloadSymbolDivX3 = DivX + DivWidth*1/4;
+float downloadSymbolDivY4 = DivY + DivHeight*1/2;
+float downloadSymbolDivX5 = DivX + DivWidth*3/4;
+float downloadSymbolDivY6 = DivY + DivHeight*1/2;
+float downloadSymbolDivX7 = DivX + DivWidth*3/8;
+float downloadSymbolDivY8 = DivY + DivHeight*0;
+float downloadSymbolDivWidth9 = DivWidth*2/8;
+float downloadSymbolDivHeight10 = DivHeight*1/2;
+float downloadSymbolDivX11 = DivX + DivWidth*3/4;
+float downloadSymbolDivY12 = DivY + DivHeight*1/4;
+float downloadSymbolDivWidth13 = DivWidth*3/4;
+float downloadSymbolDivHeight14 = DivHeight*3/4;
+//
+float heartSymbolDivX1 = DivX + DivWidth*1/4;
+float heartSymbolDivY2 = DivY + DivHeight*1/4;
+float heartSymbolDivX3 = DivX + DivWidth*1/2;
+float heartSymbolDivY4 = DivY + DivHeight*1/2;
+float heartSymbolDivX5 = DivX + DivWidth*1/4;
+float heartSymbolDivY6 = DivY + DivHeight*1/4;
+float heartSymbolDivX7 = DivX + DivWidth*0;
+float heartSymbolDivY8 = DivY + DivHeight*1/2;  
+float heartSymbolDivX9 = DivX + DivWidth*0;
+float heartSymbolDivY10 = DivY + DivHeight*1/2;
+float heartSymbolDivX11 = DivX + DivWidth*1/2;
+float heartSymbolDivY12 = DivY + DivHeight*1;  
+float heartSymbolDivX13 = DivX + DivWidth*1/2;
+float heartSymbolDivY14 = DivY + DivHeight*1;
+float heartSymbolDivX15 = DivX + DivWidth*1;
+float heartSymbolDivY16 = DivY + DivHeight*1/2;
+float heartSymbolDivX17 = DivX + DivWidth*1;
+float heartSymbolDivY18 = DivY + DivHeight*1/2;
+float heartSymbolDivX19 = DivX + DivWidth*3/4;
+float heartSymbolDivY20 = DivY + DivHeight*1/4;
+float heartSymbolDivX21 = DivX + DivWidth*3/4;
+float heartSymbolDivY22 = DivY + DivHeight*1/4;
+float heartSymbolDivX23 = DivX + DivWidth*1/2;
+float heartSymbolDivY24 = DivY + DivHeight*1/2;
+//
+float shuffleSymbolDivX1 = DivX + DivWidth*0;
+float shuffleSymbolDivY2 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX3 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY4 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX5 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY6 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX7= DivX + DivWidth*3/4;
+float shuffleSymbolDivY8 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX9 = DivX + DivWidth*0;
+float shuffleSymbolDivY10 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX11 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY12 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX13 = DivX + DivWidth*1/4;
+float shuffleSymbolDivY14 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX15 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY16 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX17 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY18 = DivY + DivHeight*0.4;
+float shuffleSymbolDivX19 = DivX + DivWidth*7/8;
+float shuffleSymbolDivY20 = DivY + DivHeight*1/4;
+float shuffleSymbolDivX21 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY22 = DivY + DivHeight*1/7.8;
+float shuffleSymbolDivX23 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY24 = DivY + DivHeight*0.88;
+float shuffleSymbolDivX25 = DivX + DivWidth*7/8;
+float shuffleSymbolDivY26 = DivY + DivHeight*3/4;
+float shuffleSymbolDivX27 = DivX + DivWidth*3/4;
+float shuffleSymbolDivY28 = DivY + DivHeight*0.625;
 
 
 
 
 
 
-//rect( DivX, DivY, DivWidth, DivHeight );
+
+
+
+
 rect( DivX, DivY, DivWidth, DivHeight );
-//triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
-//triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
-//triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
-//triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
-//rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
-//triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
-//rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
-//triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
-//triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
-//rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
-//rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
-//triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
-//triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
+rect( DivX, DivY, DivWidth, DivHeight );
+triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
+triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
+triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
+triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
+rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
+triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
+rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
+triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
+triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
+rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
+rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
+triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
+triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
 triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
+rect ( pinSymbolDivX7, pinSymbolDivY8, pinSymbolDivWidth9, pinSymbolDivHeight10 );
+triangle ( downloadSymbolDivX1, downloadSymbolDivY2, downloadSymbolDivX3, downloadSymbolDivY4, downloadSymbolDivX5, downloadSymbolDivY6 );
+rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
+line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13, downloadSymbolDivHeight14 );
+line ( heartSymbolDivX1, heartSymbolDivY2, heartSymbolDivX3, heartSymbolDivY4 );
+line ( heartSymbolDivX5, heartSymbolDivY6, heartSymbolDivX7, heartSymbolDivY8 );
+line ( heartSymbolDivX9, heartSymbolDivY10, heartSymbolDivX11, heartSymbolDivY12 );
+line ( heartSymbolDivX13, heartSymbolDivY14, heartSymbolDivX15, heartSymbolDivY16 );
+line ( heartSymbolDivX17, heartSymbolDivY18, heartSymbolDivX19, heartSymbolDivY20 );
+line ( heartSymbolDivX21, heartSymbolDivY22, heartSymbolDivX23, heartSymbolDivY24 );
+line ( shuffleSymbolDivX1, shuffleSymbolDivY2, shuffleSymbolDivX3, shuffleSymbolDivY4 );
+line ( shuffleSymbolDivX5, shuffleSymbolDivY6, shuffleSymbolDivX7, shuffleSymbolDivY8 );
+line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 );
+line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
+triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
+triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
