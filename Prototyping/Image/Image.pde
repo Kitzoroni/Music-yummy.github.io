@@ -3,10 +3,12 @@
 //
 //Display
 fullScreen();
+int appWidth = displayWidth;
+int appHeight = displayHeight;
 //
 String upArrow = "..";
-String dependenciesFolder = "Dependencies/";
-String imagesFolder = "Images/";
+String dependenciesFolder = "Dependencies";
+String imagesFolder = "Images";
 String imageName = "unknownSong";
 String imageName2 = "catserenadeSong";
 String imageName3 = "foryouSong";
@@ -50,7 +52,7 @@ println( float(imageWidth)/ float (imageHeight) );
 float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ? float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 println(imageAspectRatio_GreatOne);
 float imageDivWidthAdjusted = imageDivWidth;
-float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageWidthAdjusted * imageAspectRatio_GreatOne : imageWidthAdjusted / imageAspectRatio_GreatOne ;
+float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
 //Div: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
