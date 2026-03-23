@@ -58,6 +58,6 @@ float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAd
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //
 image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
-image(image2, 0, 0);
-image(image3, 0, 0);
+//image(image2, 0, 0);
+//image(image3, 0, 0);
 //image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
