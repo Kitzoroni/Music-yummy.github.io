@@ -42,14 +42,14 @@ int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
 float imageDivX = beginningButtonSpace;  
 float imageDivY = appHeight*4.5/20;  
-float imageDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
-float imageDivHeight = appHeight*1.5/5;
+float imageDivWidth = appWidth*1/2 - beginningButtonSpace*0.5;
+float imageDivHeight = appHeight*1/5;
 
 
 //Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
-float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ? float(imageWidth) / float(imageHeight) : float(imageHeight) ;
+float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 println(imageAspectRatio_GreatOne);
 float imageDivWidthAdjusted = imageDivWidth;
 float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
