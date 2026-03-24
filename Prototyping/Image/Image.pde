@@ -45,7 +45,6 @@ float imageDivY = appHeight*4.5/20;
 float imageDivWidth = appWidth*1/2 - beginningButtonSpace*0.5;
 float imageDivHeight = appHeight*1/5;
 
-
 //Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
