@@ -42,8 +42,8 @@ int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
 float imageDivX = beginningButtonSpace;  
 float imageDivY = appHeight*4.5/20;  
-float imageDivWidth = appWidth*1/2 - beginningButtonSpace*0.5;
-float imageDivHeight = appHeight*1/5;
+float imageDivWidth = appWidth*1/2 - beginningButtonSpace*2.3;
+float imageDivHeight = appHeight*1/2.3;
 //
 
 //Image: Aspect Ratio Algorithm
