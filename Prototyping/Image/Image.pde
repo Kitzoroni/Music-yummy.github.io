@@ -44,7 +44,7 @@ float imageDivX = beginningButtonSpace;
 float imageDivY = appHeight*4.5/20;  
 float imageDivWidth = appWidth*1/2 - beginningButtonSpace*2.82;
 float imageDivHeight = appHeight*1/2.73;
-//
+
 
 //Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
@@ -56,8 +56,9 @@ float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAd
 
 //Div: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+
 //
 image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
 //image(image2, 0, 0);
 //image(image3, 0, 0);
-//image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
