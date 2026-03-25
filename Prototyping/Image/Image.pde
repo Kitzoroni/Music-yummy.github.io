@@ -35,15 +35,25 @@ image2 = loadImage( pathway2 );
 image3 = loadImage( pathway3 );
 int imageWidth = 300;
 int imageHeight = 300;
+int image2Width = 500;
+int image2Height = 500;
+//int image3Width = 640;
+//int image3Height = 640;
 //
 //Population: DIVs
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
 float imageDivX = beginningButtonSpace;  
-float imageDivY = appHeight*4.5/20;  
+float imageDivY = appHeight* 4.5/20;  
 float imageDivWidth = appWidth*1/2 - beginningButtonSpace*2.82;
 float imageDivHeight = appHeight*1/2.73;
+//
+float image2DivX = beginningButtonSpace;  
+float image2DivY = appHeight*4.5/20;  
+float image2DivWidth = appWidth*1/2 - beginningButtonSpace*2.82;
+float image2DivHeight = appHeight*1/2.73;
+
 
 
 //Image: Aspect Ratio Algorithm
@@ -56,9 +66,9 @@ float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAd
 
 //Div: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
-
+rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
 //
 image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
-//image(image2, 0, 0);
 //image(image3, 0, 0);
 image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+image(image2, image2DivX, image2DivY, image2Width, image2Height);
