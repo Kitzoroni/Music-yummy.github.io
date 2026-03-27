@@ -54,11 +54,10 @@ float image2DivY = appHeight*4.5/20;
 float image2DivWidth = appWidth*1/2 - beginningButtonSpace*2.82;
 float image2DivHeight = appHeight*1/2.73;
 
-
-
 //Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
+
 float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 println(imageAspectRatio_GreatOne);
 float imageDivWidthAdjusted = imageDivWidth;
@@ -70,10 +69,10 @@ float image2DivWidthAdjusted = image2DivWidth;
 float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
 //Div: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
-rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
+//rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
 //
 image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
-image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
+//image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
 //image(image3, 0, 0);
 image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
-image(image2, image2DivX, image2DivY, image2Width, image2Height);
+//image(image2, image2DivX, image2DivY, image2Width, image2Height);
