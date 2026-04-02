@@ -13,17 +13,17 @@ String imageName = "unknownSong";
 String imageName2 = "burnSong";
 String imageName3 = "foryouSong";
 String fileExtension = ".jpg";
-String open = "/";
+String Open = "/";
 //
 //Concatenation
 //Note, Cut Out, See Absolute Pathway:
 //See Relative Pathway: Dependencies\Images
 /*
-- See Absolute Pathway: C:\Users\marig\OneDrive\Documents\GitHub\Music-yummy.github.io\Dependencies\Images
+- See Absolute Pathway: C:\Users\marig\OneDrive\Documents\GitHub\Music-yummy.github.io\Dependencies\Images 
 
  - See Relative Pathway: Dependencies\Images
  */
-String imageDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + imagesFolder + open;
+String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
 String pathway = imageDirectory + imageName + fileExtension;
 String pathway2 = imageDirectory + imageName2 + fileExtension;
 String pathway3 = imageDirectory + imageName3 + fileExtension;
