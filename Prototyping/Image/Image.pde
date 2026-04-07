@@ -19,7 +19,7 @@ String Open = "/";
 //Note, Cut Out, See Absolute Pathway:
 //See Relative Pathway: Dependencies\Images
 /*
-- See Absolute Pathway: C:\Users\marig\OneDrive\Documents\GitHub\Music-yummy.github.io\Dependencies\Images 
+- See Absolute Pathway: C:\Users\e.padilla\Downloads\Dependencies\Images
 
  - See Relative Pathway: Dependencies\Images
  */
