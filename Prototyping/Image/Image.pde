@@ -46,8 +46,8 @@ int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
 float imageDivX = beginningButtonSpace;  
 float imageDivY = appHeight* 4.5/20;  
-float imageDivWidth = appWidth*1/2 - beginningButtonSpace*2.82;
-float imageDivHeight = appHeight*1/2.73;
+float imageDivWidth = appWidth*63/300 - beginningButtonSpace*0;
+float imageDivHeight = appHeight*70/300;
 
 //float image2DivX = beginningButtonSpace;  
 //float image2DivY = appHeight*4.5/20;  
