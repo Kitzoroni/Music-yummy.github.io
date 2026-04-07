@@ -57,7 +57,7 @@ float imageDivHeight = appHeight*1/2.73;
 float image3DivX = beginningButtonSpace;  
 float image3DivY = appHeight*4.5/20;  
 float image3DivWidth = appWidth*2/5 - beginningButtonSpace*1;
-float image3DivHeight = appHeight*1/2.73;
+float image3DivHeight = appHeight*1/2;
 
 
 
