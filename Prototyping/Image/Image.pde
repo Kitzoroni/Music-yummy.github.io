@@ -65,31 +65,31 @@ float image3DivHeight = appHeight*1/2;
 //Image: Aspect Ratio Algorithm  
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
-//float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
-//println(imageAspectRatio_GreatOne);
-//float imageDivWidthAdjusted = imageDivWidth;
-//float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
+float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
+println(imageAspectRatio_GreatOne);
+float imageDivWidthAdjusted = imageDivWidth;
+float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
 //float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
 //println(image2AspectRatio_GreatOne);
 //float image2DivWidthAdjusted = image2DivWidth;
 //float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
 
-float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
-println(image3AspectRatio_GreatOne);
-float image3DivWidthAdjusted = image3DivWidth;
-float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
+//float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
+//println(image3AspectRatio_GreatOne);
+//float image3DivWidthAdjusted = image3DivWidth;
+//float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
 
 
 
 //Div: Image
-//rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
-rect(image3DivX, image3DivY, image3DivWidth, image3DivHeight);
+//rect(image3DivX, image3DivY, image3DivWidth, image3DivHeight);
 //
-//image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
+image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
 //image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
-image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdjusted);
-//image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+//image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdjusted);
+image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
-image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
+//image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
