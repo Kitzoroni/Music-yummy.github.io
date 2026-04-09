@@ -61,23 +61,25 @@ float imageDivHeight = appHeight*70/202;
 
 
 
-
 //Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
-float imageAspectRatio_GreatOne = ( imageWidth >= imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 println(imageAspectRatio_GreatOne);
 float imageDivWidthAdjusted = imageDivWidth;
 println("Comparison of imageHeight and imageDivHeightAdjusted:", imageHeight, imageDivHeight);
-float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 println("imageDivHeightAdjusted", imageDivHeightAdjusted);
 imageDivWidthAdjusted = 0.99;
-imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
 float imageAspectRatio_GreatOne = ( imageWidth >= imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
 float imageDivWidthAdjusted = imageDivWidth;
-if (   ) {
+if ( imageWidth >= imageWidth ) {
+  imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne;
+  while ( imageDivHeightAdjusted > imageDivHeight ) {
+    imageDivWidthAdjusted = 0.99;
+    imageDivHeightAdjusted = imageWidthAdjusted / imageAspectRatio_GreatOne;
 } else {
+  imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne;
+  while ( imageDivHeightAdjusted > imageWidth nn
 }
 
 
