@@ -1,5 +1,5 @@
 /* Aspect Ratio
-*/
+ */
 //
 //Display
 fullScreen();
@@ -20,7 +20,7 @@ String Open = "/";
 //See Relative Pathway: Dependencies\Images
 /*
 - See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Images
-
+ 
  - See Relative Pathway: Dependencies\Images
  */
 String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
@@ -44,25 +44,25 @@ int image3Height = 640;
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float imageDivX = beginningButtonSpace;  
-float imageDivY = appHeight* 31.1/202;  
+float imageDivX = beginningButtonSpace;
+float imageDivY = appHeight* 31.1/202;
 float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
 float imageDivHeight = appHeight*70/202;
 
-//float image2DivX = beginningButtonSpace;  
-//float image2DivY = appHeight*4.5/20;  
+//float image2DivX = beginningButtonSpace;
+//float image2DivY = appHeight*4.5/20;
 //float image2DivWidth = appWidth*2/5 - beginningButtonSpace*1;
 //float image2DivHeight = appHeight*1/2.73;
 
-//float image3DivX = beginningButtonSpace;  
-//float image3DivY = appHeight*4.5/20;  
+//float image3DivX = beginningButtonSpace;
+//float image3DivY = appHeight*4.5/20;
 //float image3DivWidth = appWidth*63/640 - beginningButtonSpace*0;
 //float image3DivHeight = appHeight*70/640;
 
 
 
 
-//Image: Aspect Ratio Algorithm  
+//Image: Aspect Ratio Algorithm
 println( float(imageWidth)/ float (imageHeight) );
 //Ternary Operator for Aspect Ratio
 float imageAspectRatio_GreatOne = ( imageWidth >= imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
@@ -71,6 +71,12 @@ float imageDivWidthAdjusted = imageDivWidth;
 println("Comparison of imageHeight and imageDivHeightAdjusted:", imageHeight, imageDivHeight);
 float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 println("imageDivHeightAdjusted", imageDivHeightAdjusted);
+imageDivWidthAdjusted = 0.99;
+imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
+
+if ( imageWidth >= imageHeight ) {
+} else {
+}
 
 //float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
 //println(image2AspectRatio_GreatOne);
