@@ -74,20 +74,26 @@ println("imageDivHeightAdjusted", imageDivHeightAdjusted);
 imageDivWidthAdjusted = 0.99;
 imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
-if ( imageWidth >= imageHeight ) {
+float imageAspectRatio_GreatOne = ( imageWidth >= imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
+float imageDivWidthAdjusted = imageDivWidth;
+if (   ) {
 } else {
 }
+
 
 //float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
 //println(image2AspectRatio_GreatOne);
 //float image2DivWidthAdjusted = image2DivWidth;
 //float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
+//image2DivWidthAdjusted = 0.99;
+//image2DivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
 //float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
 //println(image3AspectRatio_GreatOne);
 //float image3DivWidthAdjusted = image3DivWidth;
 //float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
-
+//image3DivWidthAdjusted = 0.99;
+//image3DivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
 
 
 //Div: Image
