@@ -50,7 +50,7 @@ if ( imageWidth >= imageWidth ) {
     imageDivHeightAdjusted = imageWidthAdjusted / imageAspectRatio_GreatOne;
 } else {
   imageDivHeightAdjusted = imageDivWidthAdjusted / imageAspectRatio_GreatOne;
-  while ( imageDivHeightAdjusted > imageWidth nn
+  while ( imageDivHeightAdjusted > imageWidth )
 }
 
 
