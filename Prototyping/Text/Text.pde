@@ -15,10 +15,13 @@ int appHeight = displayHeight;
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float imageDivX = beginningButtonSpace;
-float imageDivY = appHeight* 31.1/202;
-float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
-float imageDivHeight = appHeight*70/202;
+float quitX = appWidth - 
+float quitY = 0;
+float quitWidth = appHeight*
+float quitHeight
+float songImageDivX = beginningButtonSpace;
+float songImageDivY = appHeight*
+
 
 //Div: Image
 rect(quitX, quitY, quitWidth, quitHeight);
