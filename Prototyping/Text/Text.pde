@@ -21,6 +21,7 @@ float quitWidth = appHeight*
 float quitHeight
 float songImageDivX = beginningButtonSpace;
 float songImageDivY = appHeight*
+float messageDIV_X = appWidth* * beginningButtonSpace*
 
 
 //Div: Image
