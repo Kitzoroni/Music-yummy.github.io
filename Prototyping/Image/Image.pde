@@ -56,8 +56,8 @@ float imageDivHeight = appHeight*1/2.73;
 
 float image3DivX = beginningButtonSpace;  
 float image3DivY = appHeight*4.5/20;  
-float image3DivWidth = appWidth*2/5 - beginningButtonSpace*1;
-float image3DivHeight = appHeight*1/2;
+float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image3DivHeight = appHeight*70/202;
 
 
 
@@ -79,8 +79,7 @@ float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image
 println(image3AspectRatio_GreatOne);
 float image3DivWidthAdjusted = image3DivWidth;
 float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
-
-
+image3DivWidthAdjusted = 0.99;
 
 //Div: Image
 //rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
