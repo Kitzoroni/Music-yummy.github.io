@@ -63,6 +63,7 @@ fill(resetInk);
 
 //Aspect Ratio for Constantia-Italic-?
 fontsize = 10; //Biggest 83
-float divHeightconstantiaItalic = songTitleDivWidth;
-float constantiaItalicAspectRatio = fontSize / divHeightconstantiaItalic;
+float divHeightconstantiaItalic = songTitleDivWidth; //Key:Value, value=120
+float constantiaItalicAspectRatio = fontSize / divHeightConstantiaItalic;
 fontSize = songTitleDivWidth*constantiaItalicAspectRatio*0.95;
+println( fontSize );
