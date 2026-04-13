@@ -69,11 +69,13 @@ println( float(imageWidth)/ float (imageHeight) );
 //println(imageAspectRatio_GreatOne);
 //float imageDivWidthAdjusted = imageDivWidth;
 //float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
+//imageDivWidthAdjusted = 0.99;
 
 //float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
 //println(image2AspectRatio_GreatOne);
 //float image2DivWidthAdjusted = image2DivWidth;
 //float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
+//image2DivWidthAdjusted = 0.99;
 
 float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
 println(image3AspectRatio_GreatOne);
