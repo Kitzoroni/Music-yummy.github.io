@@ -37,12 +37,28 @@ rect(messageDIV_X, messageDivY, messageDIV_Width, messageDIV_Height);
 //Strings, text, Literal
 String title = "Song";
 
-
-
-
-
-//
+//Fonts from OS
+println("Start of Console");
+String[] fontList = PFont.list();
+printArray(fontList);
+//Tools / Create Font / Find Font / Do not Press "OK", known conflict between loadFont() and CreateFont() 
 
 //Fonts from OS
-//Aspect Ratio for Harrington
+float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
+PFont font; //Font Variabnle Name, able to have more than one Font
+String constantia-Italic-48 = "Constantia-Italic-48"; //check fonts
+font = createFont(constantia-Italic-48, fontSize);
+
 //Drawing Text
+color redInk = #A53F52;
+color whiteInk = #FFFFFF; //Grey scale is 255
+color resetInk = whiteInk;
+fill(redInk);
+//Grey Scale 0-255
+textFont(font, fontSize); //must include textSize() before text() and textWidth()
+text( title, songTitleDivX, songTitleDivY songTitleDivWidth, songTitleDivHeight );
+text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+fill(resetInk);
+
+//Aspect Ratio for Constantia-Italic-48?
+fontsize = 10; //Biggest 83
