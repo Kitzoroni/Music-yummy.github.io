@@ -64,4 +64,4 @@ fill(resetInk);
 fontsize = 10; //Biggest 83
 float divHeightconstantiaItalic = songTitleDivWidth;
 float constantiaItalicAspectRatio = fontSize / divHeightconstantiaItalic;
-fontSize = songTitleDivWidth*constantiaItalicAspectRatio;
+fontSize = songTitleDivWidth*constantiaItalicAspectRatio*0.95;
