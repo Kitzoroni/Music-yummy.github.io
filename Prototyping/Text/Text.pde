@@ -45,6 +45,7 @@ printArray(fontList);
 
 //Fonts from OS
 float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
+println( fontSize );
 PFont font; //Font Variabnle Name, able to have more than one Font
 String constantiaItalic = "Constantia-Italic"; //check fonts
 font = createFont(constantia-Italic, fontSize);
