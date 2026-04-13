@@ -35,6 +35,14 @@ rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(messageDIV_X, messageDivY, messageDIV_Width, messageDIV_Height);
 //
 //Strings, text, Literal
+String title = "Song";
+
+
+
+
+
+//
+
 //Fonts from OS
 //Aspect Ratio for Harrington
 //Drawing Text
