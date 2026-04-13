@@ -46,8 +46,8 @@ printArray(fontList);
 //Fonts from OS
 float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
 PFont font; //Font Variabnle Name, able to have more than one Font
-String constantiaItalic48 = "ConstantiaItalic48"; //check fonts
-font = createFont(constantia-Italic-48, fontSize);
+String constantiaItalic = "Constantia-Italic"; //check fonts
+font = createFont(constantia-Italic, fontSize);
 
 //Drawing Text
 color redInk = #A53F52;
@@ -60,7 +60,8 @@ text( title, songTitleDivX, songTitleDivY songTitleDivWidth, songTitleDivHeight 
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 fill(resetInk);
 
-//Aspect Ratio for Constantia-Italic-48?
+//Aspect Ratio for Constantia-Italic-?
 fontsize = 10; //Biggest 83
-font divHeightconstantiaItalic48 = songTitleDivWidth;
-float constantiaItalic48AspectRatio = fontSize / divHeightconstantiaItalic48;
+float divHeightconstantiaItalic = songTitleDivWidth;
+float constantiaItalicAspectRatio = fontSize / divHeightconstantiaItalic;
+fontSize = songTitleDivWidth*constantiaItalicAspectRatio;
