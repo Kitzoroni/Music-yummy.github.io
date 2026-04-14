@@ -45,7 +45,7 @@ printArray(fontList);
 
 //Fonts from OS
 float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
-println( fontSize );
+//println( fontSize );
 PFont font; //Font Variabnle Name, able to have more than one Font
 String constantiaItalic = "Constantia-Italic"; //check fonts
 font = createFont(constantia-Italic, fontSize);
@@ -56,6 +56,8 @@ color whiteInk = #FFFFFF; //Grey scale is 255
 color resetInk = whiteInk;
 fill(redInk);
 //Grey Scale 0-255
+textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
+//Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
 text( title, songTitleDivX, songTitleDivY songTitleDivWidth, songTitleDivHeight );
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
