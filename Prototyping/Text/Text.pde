@@ -57,13 +57,16 @@ fill(redInk);
 textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
 //Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
-text( title, songTitleDivX, songTitleDivY songTitleDivWidth, songTitleDivHeight );
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+textFont(font, fontSize2); //must include textSize() before text() and textWidth()
+text( title, quitX, quitY, quitWidth, quitWidth, quitHeight );
+textFont(font, fontSize3); //must include textSize() before text() and textWidth()
+text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height ); 
 fill(resetInk);
 
 //Aspect Ratio for Constantia-Italic
 fontsize = 10; //Biggest 83
 float divHeightconstantiaItalic = songTitleDivWidth; //Key:Value, value=120
 float constantiaItalicAspectRatio = fontSize / divHeightConstantiaItalic;
-fontSize = songTitleDivWidth*constantiaItalicAspectRatio*0.95;
+fontSize = songTitleDivWidth*constantiaItalicAspectRatio*0.9;
 println( fontSize );
