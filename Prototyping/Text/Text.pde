@@ -26,8 +26,6 @@ float messageDIV_Y = appHeight?/?*
 float messageDIV_Width = appWidth?* - beginningButtonSpace?*
 float messageDIV_Height = appHeight*?/? 
 
-
-
 //Div: Image
 rect(quitX, quitY, quitWidth, quitHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
