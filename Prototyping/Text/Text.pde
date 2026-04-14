@@ -61,7 +61,7 @@ text( title, songTitleDivX, songTitleDivY songTitleDivWidth, songTitleDivHeight 
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 fill(resetInk);
 
-//Aspect Ratio for Constantia-Italic-?
+//Aspect Ratio for Constantia-Italic
 fontsize = 10; //Biggest 83
 float divHeightconstantiaItalic = songTitleDivWidth; //Key:Value, value=120
 float constantiaItalicAspectRatio = fontSize / divHeightConstantiaItalic;
