@@ -19,12 +19,12 @@ float quitX = appWidth -
 float quitY = 0;
 float quitWidth = appHeight*
 float quitHeight
-float songImageDivX = beginningButtonSpace;
-float songImageDivY = appHeight*
-float messageDIV_X = appWidth* * beginningButtonSpace?*
+float songImageDivX = beginningButtonSpace*0;
+float songImageDivY = appHeight*31.1;
+float messageDIV_X = appWidth* beginningButtonSpace?*
 float messageDIV_Y = appHeight?/?*
 float messageDIV_Width = appWidth?* - beginningButtonSpace?*
-float messageDIV_Height = appHeight*?/? 
+float messageDIV_Height = appHeight*?/?
 
 //Div: Image
 rect(quitX, quitY, quitWidth, quitHeight);
