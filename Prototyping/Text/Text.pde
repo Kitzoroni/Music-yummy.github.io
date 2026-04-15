@@ -15,22 +15,25 @@ int appHeight = displayHeight;
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float quitX = appWidth - 
+float quitX = appWidth - appHeight*1/20;
 float quitY = 0;
-float quitWidth = appHeight*
-float quitHeight
-float songImageDivX = beginningButtonSpace*0;
-float songImageDivY = appHeight*31.1;
-float messageDIV_X = appWidth* beginningButtonSpace?*
-float messageDIV_Y = appHeight?/?*
-float messageDIV_Width = appWidth?* - beginningButtonSpace?*
-float messageDIV_Height = appHeight*?/?
+float quitWidth = appHeight*1/20;
+float quitHeight = appHeight*1/20;
+float songTitleDivX = beginningButtonSpace;
+float songTitleDivY = appHeight*1.5/20;
+float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
+float songTitleDivHeight = appHeight*1/10;
+float messageDIV_X = appWidth*1/2 + beginningButtonSpace*1/2;
+float messageDIV_Y = appHeight*1.5/20;
+float messageDIV_Width = appWidth*1/2 - beginningButtonSpace*1.5;
+float messageDIV_Height = appHeight*9/20;
+//change numbers to own
 
 //Div: Image
 rect(quitX, quitY, quitWidth, quitHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
-rect(messageDIV_X, messageDivY, messageDIV_Width, messageDIV_Height);
+rect(messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height);
 //
 //Strings, text, Literal
 String title = "Song";
@@ -46,7 +49,7 @@ float fontSize = appHeight; //Entire Program, Algorithm to have smallest font si
 //println( fontSize );
 PFont font; //Font Variabnle Name, able to have more than one Font
 String constantiaItalic = "Constantia-Italic"; //check fonts
-font = createFont(constantia-Italic, fontSize);
+font = createFont(constantiaItalic, fontSize);
 
 //Drawing Text
 color redInk = #A53F52;
@@ -80,7 +83,7 @@ while (textWidth(title) > songTitleDivWidth) {
   println("Infinite WHILE Loop");
   exit();
   }
-  fontSize *= constantDecrease2;
+  fontSize2 *= constantDecrease2;
   textFont(font, fontSize);
 }
 text( title, quitX, quitY, quitWidth, quitWidth, quitHeight ); 
@@ -94,7 +97,7 @@ while (textWidth(title) > songTitleDivWidth) {
   println("Infinite WHILE Loop");
   exit();
   }
-  fontSize *= constantDecrease3;
+  fontSize3 *= constantDecrease;
   textFont(font, fontSize);
 }
 text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height ); 
