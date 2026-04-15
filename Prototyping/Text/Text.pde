@@ -56,12 +56,47 @@ fill(redInk);
 //Grey Scale 0-255
 textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
 //Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
+float constantDecrase = 0.99;
+int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
-while (textWidth(title) > songTitleDivWidth) {println("here1");
+while (textWidth(title) > songTitleDivWidth) {
+  println("While #1");
+  iWhile++;
+  if ( iWhile>100 ) {
+  println("Infinite WHILE Loop");
+  exit();
+  }
+  fontSize *= constantDecrease;
+  textFont(font, fontSize);
+}
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 textFont(font, fontSize2); //must include textSize() before text() and textWidth()
-text( title, quitX, quitY, quitWidth, quitWidth, quitHeight );
+int iWhile=0; //copy this
+textFont(font, fontSize); //must include textSize() before text() and textWidth()
+while (textWidth(title) > songTitleDivWidth) {
+  println("While #1");
+  iWhile++;
+  if ( iWhile>100 ) {
+  println("Infinite WHILE Loop");
+  exit();
+  }
+  fontSize *= constantDecrease2;
+  textFont(font, fontSize);
+}
+text( title, quitX, quitY, quitWidth, quitWidth, quitHeight ); 
 textFont(font, fontSize3); //must include textSize() before text() and textWidth()
+int iWhile=0; //copy this
+textFont(font, fontSize); //must include textSize() before text() and textWidth()
+while (textWidth(title) > songTitleDivWidth) {
+  println("While #1");
+  iWhile++;
+  if ( iWhile>100 ) {
+  println("Infinite WHILE Loop");
+  exit();
+  }
+  fontSize *= constantDecrease3;
+  textFont(font, fontSize);
+}
 text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height ); 
 fill(resetInk);
 
