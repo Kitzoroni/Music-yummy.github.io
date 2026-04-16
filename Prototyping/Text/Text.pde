@@ -49,9 +49,9 @@ float fontSize = appHeight; //Entire Program, Algorithm to have smallest font si
 float fontSize2 = appHeight;
 float fontSize3 = appHeight;
 PFont font; //Font Variabnle Name, able to have more than one Font
-String constantiaItalic = "Constantia-Italic"; //check fonts
-font = createFont(constantiaItalic, fontSize);
-//HERE
+String constantia = "Constantia"; //check fonts
+font = createFont(constantia, fontSize);
+
 //Drawing Text
 color redInk = #A53F52;
 color whiteInk = #FFFFFF; //Grey scale is 255
@@ -104,12 +104,10 @@ while (textWidth(title) > songTitleDivWidth) {
 text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height ); 
 fill(resetInk);
 
-//Aspect Ratio for Constantia-Italic
-fontsize = 10; //Biggest 83
-float divHeightconstantiaItalic = songTitleDivWidth; //Key:Value, value=120
-float constantiaItalicAspectRatio = fontSize / divHeightConstantiaItalic;
-fontSize = songTitleDivWidth*constantiaItalicAspectRatio*0.9;
-fontSize = songTitleDivHeight*constantiaItalicAspectRatio * textAdjustment;
-fontSize2 = messageDIV_Height*constantiaItalicAspectRatio * textAdjustment;
-fontSize3 = quitHeight*constantiaItalicAspectRatio * textAdjustment;
-println( fontSize );
+//Aspect Ratio for Constantia-Italic //HERE
+float fontSizeConstantia = 83; //Default fontSize for 100%
+float divHeightConstantia = songTitleDivHeight;
+float harringtonAspectRatio = fontSizeconstantia / divHeightconstantia; 
+fontSize1 = songTitleDivHeight * constantiaAspectRatio;
+fontSize2 = messageDIV_Height * constantiaAspectRatio;
+fontSize3 = quitHeight * constantianAspectRatio;
