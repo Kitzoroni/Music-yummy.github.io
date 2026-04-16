@@ -46,11 +46,12 @@ printArray(fontList);
 
 //Fonts from OS
 float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
-//println( fontSize );
+float fontSize2 = appHeight;
+float fontSize3 = appHeight;
 PFont font; //Font Variabnle Name, able to have more than one Font
 String constantiaItalic = "Constantia-Italic"; //check fonts
 font = createFont(constantiaItalic, fontSize);
-
+//HERE
 //Drawing Text
 color redInk = #A53F52;
 color whiteInk = #FFFFFF; //Grey scale is 255
