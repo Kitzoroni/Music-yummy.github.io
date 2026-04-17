@@ -127,7 +127,7 @@ text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height );
 fill(resetInk);
 
 //Aspect Ratio for Constantia-Italic
-float fontSizeConstantia = 10; //Default fontSize for ~100%
+float fontSizeConstantia = 10; //Default fontSize for 100%
 float divHeightConstantia = songTitleDivHeight;
 float constantiaAspectRatio = fontSizeConstantia / divHeightConstantia; //#<1
 float textAdjustment = 0.9;
@@ -137,7 +137,7 @@ fontSize3 = quitHeight*constantiaAspectRatio * textAdjustment;
 //println( fontSize );
 
 //Aspect Ratio for Constantia-Italic
-float fontSizeConstantia = 83; //Default fontSize for 100%
+float fontSizeConstantia = 10; //Default fontSize for 100%
 float divHeightConstantia = songTitleDivHeight;
 float constantiaAspectRatio = fontSizeconstantia / divHeightconstantia;
 fontSize1 = songTitleDivHeight * constantiaAspectRatio;
