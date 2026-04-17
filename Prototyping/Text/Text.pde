@@ -40,15 +40,15 @@ String title = "Song";
 
 //Fonts from OS
 println("Start of Console");
-String[] fontList = PFont.list();
+String[] fontList = PFont.list();//
 printArray(fontList);
-//Tools / Create Font / Find Font / Do not Press "OK", known conflict between loadFont() and CreateFont() 
+//Tools / Create Font / Find Font / Do not Press "OK", known conflict between loadFont() and CreateFont()
 
 //Fonts from OS
 float fontSize = appHeight; //Entire Program, Algorithm to have smallest font size
 float fontSize2 = appHeight;
 float fontSize3 = appHeight;
-PFont font; //Font Variabnle Name, able to have more than one Font
+PFont font; //Font Variable Name, able to have more than one Font
 String constantia = "Constantia"; //check fonts
 font = createFont(constantia, fontSize);
 
@@ -60,13 +60,21 @@ fill(redInk);
 //Grey Scale 0-255
 textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
 //Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
-float constantDecrase = 0.99;
+
+float constantDecrease = 0.99;
 int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
 while (textWidth(title) > songTitleDivWidth) {
-  println("While #1");
+  //println("While #1");
+
+float constantDecrease = 0.99;
+int iWhile=0; //copy this
+textFont(font, fontSize); //must include textSize() before text() and textWidth()
+while (textWidth(title) > songTitleDivWidth) {
+  //println("While #1");
+
   iWhile++;
-  if ( iWhile>100 ) {
+  if ( iWhile>1000) {
   println("Infinite WHILE Loop");
   exit();
   }
@@ -75,6 +83,20 @@ while (textWidth(title) > songTitleDivWidth) {
 }
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 textFont(font, fontSize2); //must include textSize() before text() and textWidth()
+
+iWhile=0; //copy this
+textFont(font, fontSize); //must include textSize() before text() and textWidth()
+iWhile=0;
+while (textWidth(title) > messageDIV_Width) {
+  //println("While #1");
+  iWhile++;
+  if ( iWhile>1000 ) {
+  println("Infinite WHILE Loop");
+  exit();
+  }
+  fontSize2 *= constantDecrease; //HERE
+  textFont(font, fontSize2);
+}
 int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
 while (textWidth(title) > songTitleDivWidth) {
@@ -84,10 +106,10 @@ while (textWidth(title) > songTitleDivWidth) {
   println("Infinite WHILE Loop");
   exit();
   }
-  fontSize2 *= constantDecrease2;
-  textFont(font, fontSize);
+  fontSize2 *= constantDecrease3;
+  textFont(font, fontSize3);
 }
-text( title, quitX, quitY, quitWidth, quitWidth, quitHeight ); 
+text( title, quitX, quitY, quitWidth, quitWidth, quitHeight );
 textFont(font, fontSize3); //must include textSize() before text() and textWidth()
 int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
@@ -101,13 +123,23 @@ while (textWidth(title) > songTitleDivWidth) {
   fontSize3 *= constantDecrease;
   textFont(font, fontSize);
 }
-text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height ); 
+text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height );
 fill(resetInk);
 
-//Aspect Ratio for Constantia-Italic //HERE
+//Aspect Ratio for Constantia-Italic
+float fontSizeConstantia = 10; //Default fontSize for ~100%
+float divHeightConstantia = songTitleDivHeight;
+float constantiaAspectRatio = fontSizeConstantia / divHeightConstantia; //#<1
+float textAdjustment = 0.9;
+fontSize = songTitleDivHeight*constantiaAspectRatio * textAdjustment;
+fontSize2 = messageDIV_Height*constantiaAspectRatio * textAdjustment;
+fontSize3 = quitHeight*constantiaAspectRatio * textAdjustment;
+//println( fontSize );
+
+//Aspect Ratio for Constantia-Italic
 float fontSizeConstantia = 83; //Default fontSize for 100%
 float divHeightConstantia = songTitleDivHeight;
-float harringtonAspectRatio = fontSizeconstantia / divHeightconstantia; 
+float constantiaAspectRatio = fontSizeconstantia / divHeightconstantia;
 fontSize1 = songTitleDivHeight * constantiaAspectRatio;
 fontSize2 = messageDIV_Height * constantiaAspectRatio;
-fontSize3 = quitHeight * constantianAspectRatio;
+fontSize3 = quitHeight * constantiaAspectRatio;
