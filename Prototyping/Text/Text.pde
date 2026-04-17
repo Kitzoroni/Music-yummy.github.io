@@ -142,3 +142,5 @@ float constantiaAspectRatio = fontSizeconstantia / divHeightconstantia;
 fontSize1 = songTitleDivHeight * constantiaAspectRatio;
 fontSize2 = messageDIV_Height * constantiaAspectRatio;
 fontSize3 = quitHeight * constantiaAspectRatio;
+
+//
