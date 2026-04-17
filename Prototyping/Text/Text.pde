@@ -106,7 +106,7 @@ while (textWidth(title) > songTitleDivWidth) {
   println("Infinite WHILE Loop");
   exit();
   }
-  fontSize2 *= constantDecrease3;
+  fontSize3 *= constantDecrease;
   textFont(font, fontSize3);
 }
 text( title, quitX, quitY, quitWidth, quitWidth, quitHeight );
