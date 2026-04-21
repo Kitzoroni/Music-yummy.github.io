@@ -33,7 +33,7 @@ String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + o
 String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ;
 String file = musicDirectory + songName + fileExtension_mp3;
 playList[ currentSong ] = minim.loadFile( file );
-file = soundEffectsDirectory + soundEffect + fileExtentision_mp3;
+file = soundEffectsDirectory + soundEffect + fileExtension_mp3;
 soundEffects[currentSong] = minim.loadFile( file );
 //
 playList[currentSong].play();
