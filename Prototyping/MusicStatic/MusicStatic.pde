@@ -19,10 +19,18 @@ int currentSong = numberOfSongs - numberOfSongs;
 int appWidth = width;
 int appHeight = height;
 
+//Music Loading
+minim = new Minim(this);
+String upArrow = "../../";
+String musicFolder = "Music";
+String soundEffectsFolder = "Sound Effects";
+String dependenciesFolder = "Dependencies";
+String songName = "Burn";
+String soundEffect = "lancer-splat";
+String fileExtension_mp3 = ".mp3";
 
 
 
 
 
-
-//Static Music
+//Static Music (download music home)
