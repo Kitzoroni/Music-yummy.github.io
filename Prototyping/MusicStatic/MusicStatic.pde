@@ -36,6 +36,25 @@ playList[ currentSong ] = minim.loadFile( file );
 file = soundEffectsDirectory + soundEffect + fileExtension_mp3;
 soundEffects[currentSong] = minim.loadFile( file );
 //
-playList[currentSong].play();
+if ( playList[currentSong]==null 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Static Music (download music home)
