@@ -28,9 +28,14 @@ String dependenciesFolder = "Dependencies";
 String songName = "Burn"; //download home
 String soundEffect = "lancer-splat";
 String fileExtension_mp3 = ".mp3";
-
-
-
-
+//
+String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ;
+String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ;
+String file = musicDirectory + songName + fileExtension_mp3;
+playList[ currentSong ] = minim.loadFile( file );
+file = soundEffectsDirectory + soundEffect + fileExtentision_mp3;
+soundEffects[currentSong] = minim.loadFile( file );
+//
+playList[currentSong].play();
 
 //Static Music (download music home)
