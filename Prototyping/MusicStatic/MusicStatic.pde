@@ -32,12 +32,12 @@ void setup() {
   //
   String[] songName = new String[numberOfSongs];
   songName[0] = "Burn";
-  songName[1] =
   songName[2] =
+  songName[3] =
   
   
-  String songName1 = "idk"
-  String soundEffect1 = "splat";
+  String songName2 = "idk"
+  String soundEffect2 = "splat";
   String fileExtension_mp3 = ".mp3";
   
   
