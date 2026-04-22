@@ -32,8 +32,8 @@ void setup() {
   //
   String[] songName = new String[numberOfSongs];
   songName[0] = "Burn";
-  songName[2] =
-  songName[3] =
+  songName[2] = "song";
+  songName[3] = "song";
   
   
   String songName2 = "idk"
