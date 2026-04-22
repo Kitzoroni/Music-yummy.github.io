@@ -18,7 +18,7 @@ void setup() {
   //Display
   //fullScreen(); //height width
   int appWidth = width;
-  int appHeight = height;
+  int appHeight = height;   
   //Music Loading
   minim = new Minim(this);
   String upArrow = "../../";
@@ -29,6 +29,21 @@ void setup() {
   String songName = "Burn"; //download home
   String soundEffect = "splat";
   String fileExtension_mp3 = ".mp3";
+  //
+  String[] songName = new String[numberOfSongs];
+  songName[0] = "Burn";
+  songName[1] =
+  songName[2] =
+  
+  
+  String songName1 = "idk"
+  String soundEffect1 = "splat";
+  String fileExtension_mp3 = ".mp3";
+  
+  
+  //del this and check music
+  
+  
   //
   String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ;
   String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ;
