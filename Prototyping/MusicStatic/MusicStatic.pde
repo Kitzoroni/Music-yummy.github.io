@@ -8,7 +8,7 @@ import ddf.minim.ugens.*;
 //
 //Global Variables
 Minim minim; //initiates entire class
-int numberOfSongs = 3;
+int numberOfSongs = 1;
 int numberOfSoundEffect = 1;
 AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
@@ -27,7 +27,7 @@ void setup() {
   String soundEffectsFolder = "Sound Effects";
   String dependenciesFolder = "Dependencies";
   String songName = "Burn"; //download home
-  String soundEffect = "lancer-splat";
+  String soundEffect = "splat";
   String fileExtension_mp3 = ".mp3";
   //
   String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ;
