@@ -8,7 +8,7 @@ import ddf.minim.ugens.*;
 //
 //Global Variables
 Minim minim; //initiates entire class
-int numberOfSongs = 1;
+int numberOfSongs = 3;
 int numberOfSoundEffect = 1;
 AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
@@ -21,7 +21,7 @@ void setup() {
   int appHeight = height;   
   //Music Loading
   minim = new Minim(this);
-  String upArrow = "../../";
+  String upArrow = "../../"; //or ..
   String open = "/";
   String musicFolder = "Music";
   String soundEffectsFolder = "Sound Effects";
@@ -31,14 +31,15 @@ void setup() {
   String fileExtension_mp3 = ".mp3";
   //
   String[] songName = new String[numberOfSongs];
-  songName[0] = "Burn";
-  songName[2] = "song";
-  songName[3] = "song";
-  
-  
-  String songName2 = "idk"
-  String soundEffect2 = "splat";
-  String fileExtension_mp3 = ".mp3";
+  songName[currentSong] = "Burn";
+  currentSong++;
+  songName[currentSong] = "Burn";
+  currentSong++;
+  songName[currentSong] = "song";
+  currentSong++;
+  songName[currentSong] = "song";
+  currentSong=0;
+
   
   
   //del this and check music
@@ -47,31 +48,37 @@ void setup() {
   //
   String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ;
   String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ;
-  String file = musicDirectory + songName + fileExtension_mp3;
-  playList[ currentSong ] = minim.loadFile( file );
+    for ( int i=0; i<numberOfSongs ; i++ ) {
+  pathway = musicDirectory + songName[i] + fileExtension_mp3;
+  playList[ currentSong ] = minim.loadFile( pathway );
   file = soundEffectsDirectory + soundEffect + fileExtension_mp3;
-  soundEffects[currentSong] = minim.loadFile( file );
+  soundEffects[currentSong] = minim.loadFile( pathway );
   //
-  if ( playList[currentSong]==null || soundEffects[currentSong]==null ) { //ERROR, play list is NULL
+ for ( int i=0; i<numberOfSongs ; i++ ) {
+  if ( playList[currentSong]==null ) { //ERROR, play list is NULL
     //See FILE or minim.loadFile
     println("The Play List or Sound Effects did not load properly");
     printArray(playList);
     printArray(soundEffects);
-    /*
-  println("Music Pathway", musicDirectory);
-     println("Full Music File Pathway", file);
-     */
-  } else {
-    playList[currentSong].play();
-    printArray(playList);
+    exit();
   }
+ }
+ if ( soundEffects[currentSong]==null ) {
+   println("The Sound Effects did not load properly");
+   printArray(soundEffects);
+   exit();
+ }
+
+ 
+
 }//End Setup
 //
-void draw() {}//End Draw
+void draw() {//End Draw
+  playList[currentSong].play();
 //
-void mousePressed(){}//End Mouse Pressed
+void mousePressed(){//End Mouse Pressed
 //
-void keyPressed() {}//End Key Pressed
+void keyPressed() {//End Key Pressed
 //
 //End MAIN Program
 
