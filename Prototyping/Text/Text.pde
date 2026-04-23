@@ -29,7 +29,6 @@ rect(quitX, quitY, quitWidth, quitHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height);
 //
-<<<<<<< HEAD
 //Strings, Text, Literal
 //Note: metaData.mp3
 String title = "Text Place Holder!"; //
@@ -67,7 +66,6 @@ fontSize1 = songTitleDivHeight * constantiaAspectRatio;
 fontSize12 = messageDIV_Height * constantiaAspectRatio;
 fontSize13 = quitHeight * constantiaAspectRatio;
 //
-=======
 //Strings, text, Literal
 String title = "Song";
 
@@ -85,14 +83,13 @@ PFont font; //Font Variable Name, able to have more than one Font
 String constantia = "Constantia"; //check fonts
 font = createFont(constantia, fontSize);
 
->>>>>>> ee285c6b340221271e0ea1fe2958f119b737325a
+
 //Drawing Text
 color redInk = #A53F52; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
 color whiteInk = #FFFFFF; //Grey Scale is 255
 color resetInk = whiteInk;
 fill(redInk); //Ink, hexidecimal copied from Color Selector
 //Grey Scale 0-255
-<<<<<<< HEAD
 textAlign (CENTER, BOTTOM); //Align X&Y, see Processing.org / Reference
 //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
 //
@@ -106,7 +103,6 @@ while ( textWidth(title) > songTitleDivWidth ) {
   if ( iWhile>10000 ) { //>1000 means -1 text or i
     println("Infninte WHILE Loop");
     exit();
-=======
 textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
 //Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
 
@@ -126,19 +122,16 @@ while (textWidth(title) > songTitleDivWidth) {
   if ( iWhile>1000) {
   println("Infinite WHILE Loop");
   exit();
->>>>>>> ee285c6b340221271e0ea1fe2958f119b737325a
   }
   fontSize1 *= constantDecrease;
   textFont(font, fontSize1);
 }
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
-<<<<<<< HEAD
 //
 textFont(font, fontSize12); 
 iWhile=0;
 while ( textWidth(title) > messageDIV_Width ) {
   //println("While #2"); //Infinite WHILE Check
-=======
 textFont(font, fontSize2); //must include textSize() before text() and textWidth()
 
 iWhile=0; //copy this
@@ -164,7 +157,6 @@ while (textWidth(title) > songTitleDivWidth) {
     println("Infninte WHILE Loop");
     exit();
   }
-<<<<<<< HEAD
   fontSize12 *= constantDecrease;
   textFont(font, fontSize12);
 }
@@ -174,7 +166,6 @@ textFont(font, fontSize13);
 iWhile=0;
 while ( textWidth(title) > quitWidth ) {
   //println("While #3"); //Infinite WHILE Check
-=======
   fontSize2 *= constantDecrease;
   textFont(font, fontSize2);
 }
@@ -184,13 +175,11 @@ int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
 while (textWidth(title) > songTitleDivWidth) {
   println("While #1");
->>>>>>> ee285c6b340221271e0ea1fe2958f119b737325a
   iWhile++;
   if ( iWhile>10000 ) { //>1000 means -1 text or i
     println("Infninte WHILE Loop");
     exit();
   }
-<<<<<<< HEAD
   fontSize13 *= constantDecrease;
   textFont(font, fontSize13);
 }
@@ -198,7 +187,6 @@ text( title, quitX, quitY, quitWidth, quitHeight );
 fill(resetInk);
 //
 println(songTitleDivHeight);
-=======
   fontSize3 *= constantDecrease;
   textFont(font, fontSize3);
 text( title, messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height );
@@ -223,4 +211,3 @@ fontSize2 = messageDIV_Height * constantiaAspectRatio;
 fontSize3 = quitHeight * constantiaAspectRatio;
 
 //
->>>>>>> ee285c6b340221271e0ea1fe2958f119b737325a
