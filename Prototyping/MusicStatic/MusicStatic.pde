@@ -53,6 +53,8 @@ void setup() {
   playList[ currentSong ] = minim.loadFile( pathway );
   file = soundEffectsDirectory + soundEffect + fileExtension_mp3;
   soundEffects[currentSong] = minim.loadFile( pathway );
+    }
+    pathway = soundEffectsDirectory + soundEffect1 + fileExtension_.mp3 //check github
   //
  for ( int i=0; i<numberOfSongs ; i++ ) {
   if ( playList[currentSong]==null ) { //ERROR, play list is NULL
@@ -73,10 +75,11 @@ void setup() {
 
 }//End Setup
 //
-void draw() {//End Draw
+void draw() { //End Draw
   playList[currentSong].play();
 //
-void mousePressed(){//End Mouse Pressed
+void mousePressed() {
+
 //
 void keyPressed() {//End Key Pressed
 //
