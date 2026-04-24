@@ -31,8 +31,8 @@ rect(messageDIV_X, messageDIV_Y, messageDIV_Width, messageDIV_Height);
 //
 //Strings, Text, Literal
 //Note: metaData.mp3
-String title = "Text Place Holder!"; //
-/* Full String longer than Rectangle, "Wahoo! I changed 2D Size."
+String title = "songg"; //
+/* Full String longer than Rectangle, "song"
  - divHeight must fit the font size or text is not shown (Advanced, error check includes %-decrease)
  - Fonts includes the in WHITE SPACE around the foreground "coloured ink"
  - divWidth must include the font size
@@ -151,7 +151,7 @@ int iWhile=0; //copy this
 textFont(font, fontSize); //must include textSize() before text() and textWidth()
 while (textWidth(title) > songTitleDivWidth) {
   println("While #1");
->>>>>>> ee285c6b340221271e0ea1fe2958f119b737325a
+
   iWhile++;
   if ( iWhile>10000 ) { //>1000 means -1 text or i
     println("Infninte WHILE Loop");
