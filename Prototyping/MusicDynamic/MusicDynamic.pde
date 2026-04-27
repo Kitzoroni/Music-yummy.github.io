@@ -203,6 +203,7 @@ String fileExtension_mp3 = ".mp3";
     pathway = musicDirectory + songName[i] + fileExtension_mp3; //TO BE Rewritten and deleted once file is LOADED
     println("Inside FOR, pathway:", pathway);
     playList[ i ] = minim.loadFile( pathway );
+    playListMetaData[ currentSong ] = playList [ i ].getMetaData();
     println(currentSong);
   }
   pathway = soundEffectsDirectory + soundEffect1 + fileExtension_mp3;
