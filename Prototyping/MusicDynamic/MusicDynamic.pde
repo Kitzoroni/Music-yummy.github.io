@@ -19,6 +19,10 @@ void setup() {
 //fullScreen(); //height width
 int appWidth = width;
 int appHeight = height;
+//
+
+
+
 
 //Music Loading
 minim = new Minim(this);
