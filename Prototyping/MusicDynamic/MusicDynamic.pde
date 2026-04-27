@@ -203,7 +203,7 @@ String fileExtension_mp3 = ".mp3";
     pathway = musicDirectory + songName[i] + fileExtension_mp3; //TO BE Rewritten and deleted once file is LOADED
     println("Inside FOR, pathway:", pathway);
     playList[ i ] = minim.loadFile( pathway );
-    playListMetaData[ currentSong ] = playList [ i ].getMetaData();
+    playListMetaData[ i ] = playList [ i ].getMetaData();
     println(currentSong);
   }
   pathway = soundEffectsDirectory + soundEffect1 + fileExtension_mp3;
@@ -256,6 +256,13 @@ while ( textWidth(title) > songTitleDivWidth ) {
   if ( iWhile>10000 ) { //>1000 means -1 text or i
     println("Infinte WHILE Loop");
     exit();
+  }
+  fontSize *= constantDecrease;
+  textFont(font, fontSize);
+  }
+text ( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+
+
   
 
 
