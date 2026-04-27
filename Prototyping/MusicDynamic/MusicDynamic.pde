@@ -22,7 +22,8 @@ int appHeight = height;
 
 //Music Loading
 minim = new Minim(this);
-String upArrow = "../../";
+String upArrow = ".."; //.. or ../../
+String open = "/";
 String musicFolder = "Music";
 String soundEffectsFolder = "Sound Effects";
 String dependenciesFolder = "Dependencies";
