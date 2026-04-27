@@ -30,60 +30,29 @@ void setup() {
   String soundEffect = "splat";
   String fileExtension_mp3 = ".mp3";
   //
-  String[] songName = new String[numberOfSongs];
-  songName[currentSong] = "Burn";
-  currentSong++;
-  songName[currentSong] = "Burn";
-  currentSong++;
-  songName[currentSong] = "song";
-  currentSong++;
-  songName[currentSong] = "song";
-  currentSong=0;
-
-  
-  
-  //del this and check music
-  
-  
-  //
-  String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ;
-  String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ;
-    for ( int i=0; i<numberOfSongs ; i++ ) {
-  pathway = musicDirectory + songName[i] + fileExtension_mp3;
-  playList[ currentSong ] = minim.loadFile( pathway );
-  file = soundEffectsDirectory + soundEffect + fileExtension_mp3;
-  soundEffects[currentSong] = minim.loadFile( pathway );
-    }
-    pathway = soundEffectsDirectory + soundEffect1 + fileExtension_.mp3 //check github
-  //
- for ( int i=0; i<numberOfSongs ; i++ ) {
-  if ( playList[currentSong]==null ) { //ERROR, play list is NULL
-    //See FILE or minim.loadFile
-    println("The Play List or Sound Effects did not load properly");
-    printArray(playList);
-    printArray(soundEffects);
-    exit();
-  }
- }
- if ( soundEffects[currentSong]==null ) {
-   println("The Sound Effects did not load properly");
-   printArray(soundEffects);
-   exit();
- }
-
- 
-
-}//End Setup
+String musicDirectory = upArrow + open + upArrow + open + dependanciesFolder + open + musicFolder + open ; //Concatenation
+String soundEffectsDirectory = upArrow + open + upArrow + open + dependanciesFolder + open + soundEffectsFolder + open ; //Concatenation
+String pathway = musicDirectory + songName1 + fileExtension_mp3
+println(pathway);
+playList[ currentSong ] = minim.loadFile( pathway ); 
+pathway = soundEffectsDirectory + soundEffect1 + fileExtension_mp3; 
+println(pathway);
+soundEffects[currentSong] = minim.loadFile( pathway ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
 //
-void draw() { //End Draw
+if ( playList[currentSong]==null || soundEffects[currentSong]==null ) { //ERROR, play list is NULL
+  //See FILE or minim.loadFile
+  println("The Play List or Sound Effects did not load properly");
+  printArray(playList);
+  printArray(soundEffects);
+  /*
+  println("Music Pathway", musicDirectory);
+   println("Full Music File Pathway", file);
+   */
+} else {
   playList[currentSong].play();
-//
-void mousePressed() {
-
-//
-void keyPressed() {//End Key Pressed
-//
-//End MAIN Program
+  //soundEffects[currentSong].play();
+  printArray(playList);
+}
 
 
 
