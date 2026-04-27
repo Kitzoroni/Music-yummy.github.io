@@ -62,9 +62,9 @@ float fontSize1Constantia = 10; //Default fontSize1 for 100%
 float divHeightConstantia = songTitleDivHeight; //Key:Value, value=120
 float constantiaAspectRatio = fontSize1Constantia / divHeightConstantia; //#<1
 //RECT(#) && RECT(#)+3
-fontSize1 = songTitleDivHeight * constantiaAspectRatio;
-fontSize12 = messageDIV_Height * constantiaAspectRatio;
-fontSize13 = quitHeight * constantiaAspectRatio;
+fontSize = songTitleDivHeight * constantiaAspectRatio;
+fontSize2 = messageDIV_Height * constantiaAspectRatio;
+fontSize3 = quitHeight * constantiaAspectRatio;
 //
 //Strings, text, Literal
 String title = "Song";
@@ -96,12 +96,12 @@ textAlign (CENTER, BOTTOM); //Align X&Y, see Processing.org / Reference
 // Procedure Passing RECT(#2) && fontSize1(RECT#)
 float constantDecrease = 0.99;
 int iWhile=0;
-textFont(font, fontSize1); //must include textSize() before text() & textWidth()
+textFont(font, fontSize); //must include textSize() before text() & textWidth()
 while ( textWidth(title) > songTitleDivWidth ) {
   //println("While #1"); //Infinite WHILE Check
   iWhile++;
   if ( iWhile>10000 ) { //>1000 means -1 text or i
-    println("Infninte WHILE Loop");
+    println("Infinte WHILE Loop");
     exit();
 textAlign (CENTER, CENTER); //Align X and Y, see Processing.org / Reference
 //Values: [LEFT CENTER RIGHT ] & [TOP CENTER BOTTOM BASELINE ]
