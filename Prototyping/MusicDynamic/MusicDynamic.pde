@@ -263,16 +263,6 @@ while ( textWidth(title) > songTitleDivWidth ) {
 text ( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 
 
-  
-
-
-
-
-
-
-
-
-
 
 //
 void mousePressed() {
