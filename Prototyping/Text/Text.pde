@@ -6,6 +6,7 @@ fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
+//ADD lyric box??
 //Population: DIVs
 int numberOfButtons = 13; //Half a button on either side as space, Center Button is Play
 int widthOfButton = appWidth/numberOfButtons;
