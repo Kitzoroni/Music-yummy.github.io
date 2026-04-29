@@ -10,10 +10,10 @@ int appHeight = displayHeight;
 int numberOfButtons = 13; //Half a button on either side as space, Center Button is Play
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float quitX = appWidth - appHeight*1/20;
-float quitY = 0;
-float quitWidth = appHeight*1/20;
-float quitHeight = appHeight*1/20;
+float TQuitX = appWidth - appHeight*1/20;
+float TQuitY = 0;
+float TQuitWidth = appHeight*1/20;
+float TQuitHeight = appHeight*1/20;
 float songTitleDivX = beginningButtonSpace*0;
 float songTitleDivY = appHeight*3/20;
 float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
@@ -30,7 +30,7 @@ float songTex3DIVWidth = appWidth*1/2 - beginningButtonSpace*3.5;
 float songTex3DIVHeight = appHeight*1.19/10;
 //
 //DIV: Image
-rect(quitX, quitY, quitWidth, quitHeight);
+rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
 rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
@@ -39,12 +39,13 @@ rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
 String title = "Burn";
 String name = "Unknown";
 String text = "For you";
+String quit = "X";
 //
 // Fonts from OS
 //rect(height) is biggest font is word is the smallest
 float fontSize = songTitleDivHeight; //1:1 Font Height to rectHeight
 float fontSize2 = songName2DIV_Height; 
-float fontSize3 = quitHeight; 
+float fontSize3 = TQuitHeight; 
 PFont font; //Font Variable Name, able to have more than one Font
 String constantia = "Constantia"; //Spelling of the Font Matters, see PFont.list() v Create Font above
 font = createFont(constantia, fontSize);
@@ -84,6 +85,7 @@ while ( textWidth(title) > songTitleDivWidth ) {
 text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
 text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
 text( text, songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVY );
+text( quit, TQuitX, TQuitY, TQuitWidth, TQuitY );
 //
 textFont(font, fontSize2); //must include textSize() before text() & textWidth()
 iWhile=0;
@@ -101,7 +103,7 @@ text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Hei
 //
 textFont(font, fontSize3); //must include textSize() before text() & textWidth()
 iWhile=0;
-while ( textWidth(title) > quitWidth ) {
+while ( textWidth(title) > TQuitWidth ) {
   //println("While #3"); //Infinite WHILE Check
   iWhile++;
   if ( iWhile>10000 ) { //>1000 means -1 text or i
@@ -111,7 +113,6 @@ while ( textWidth(title) > quitWidth ) {
   fontSize3 *= constantDecrease;
   textFont(font, fontSize3);
 }
-text( title, quitX, quitY, quitWidth, quitHeight );
 fill(resetInk);
 //
 //println(fontSize, fontSize2, fontSize3);
