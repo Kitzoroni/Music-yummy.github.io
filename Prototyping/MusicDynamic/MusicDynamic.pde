@@ -120,8 +120,10 @@ float fontSize2 = messageDIV_Height;
 float fontSize3 = quitHeight;
 PFont font;
 String constantia = "Constantia";
-font = createFont(constantia, fontSize);
+PFont font;
+String font = createFont(constantia, fontSize);
 //
+//Aspect ratio idk
 //Drawing Text
 color redInk = #A53F52; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
 color whiteInk = #FFFFFF; //Grey Scale is 255
