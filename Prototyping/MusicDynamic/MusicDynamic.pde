@@ -226,7 +226,7 @@ String fileExtension_mp3 = ".mp3";
 }//End Setup
 //
 void draw() {
-  rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitle); //add it
+  rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitle); //ADD it
   //playList[currentSong].play();
   soundEffects[currentSong].play();
 }//End Draw
