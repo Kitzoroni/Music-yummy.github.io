@@ -226,6 +226,7 @@ String fileExtension_mp3 = ".mp3";
 }//End Setup
 //
 void draw() {
+  rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitle); //add it
   //playList[currentSong].play();
   soundEffects[currentSong].play();
 }//End Draw
@@ -266,9 +267,14 @@ text ( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, song
 
 //
 void mousePressed() {
-}//End Mouse Pressed
+  
+  
+}
+
+  //End Mouse Pressed
 //
 void keyPressed() {
+}
 //
 
 if ( key=='P' || key=='p' ) playList[currentSong].loop(0); //Simple Play, double tap possible
