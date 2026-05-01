@@ -7,35 +7,37 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-Minim minim; //initiates entire class
-int numberOfSongs = 3;
+Minim minim;  //initates entire class
+int numberOfSongs = 1; //Best Practcie
 int numberOfSoundEffect = 1;
 AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
-int currentSong = numberOfSongs - numberOfSongs;
+int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
-void setup() {
-  //Display
-  //fullScreen(); //height width
-  int appWidth = width;
-  int appHeight = height;   
-  //Music Loading
-  minim = new Minim(this);
-  String upArrow = ".."; // .. or ../../
-  String open = "/";
-  String musicFolder = "Music";
-  String soundEffectsFolder = "Sound Effects";
-  String dependenciesFolder = "Dependencies";
-  String songName = "Burn"; //download home
-  String soundEffect = "splat";
-  String fileExtension_mp3 = ".mp3";
-  //
-String musicDirectory = upArrow + open + upArrow + open + dependanciesFolder + open + musicFolder + open ; //Concatenation
+//Display
+size( 700, 500 ); //width //height
+//fullScreen();  //displayWidth //displayHeight
+int appWidth = width; //Best Practice
+int appHeight = height;
+//
+//Music Loading - STRUCTURED Review
+minim = new Minim(this); //Manditory
+String upArrow = "..";
+String open = "/";
+String musicFolder = "Music"; //Developer Specific
+String soundEffectsFolder = "Sound Effects"; //Developer Specific
+String dependanciesFolder = "Dependencies"; //Developer Specific
+String songName = "Burn";
+String soundEffect1 = "splat";
+String fileExtension_mp3 = ".mp3";
+//
+//CAUTION: Mistakes Below
+String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ; //Concatenation
 String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ; //Concatenation
-String pathway = musicDirectory + songName + fileExtension_mp3 ;
+String pathway = musicDirectory + songName + fileExtension_mp3; //TO BE Rewritten and deleted once file is LOADED
 println(pathway);
-playList[ currentSong ] = minim.loadFile( pathway ); 
-pathway = soundEffectsDirectory + soundEffect + fileExtension_mp3; 
+playList[ currentSong ] = minim.loadFile( pathway ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
+pathway = soundEffectsDirectory + soundEffect1 + fileExtension_mp3; //Rewritting FILE
 println(pathway);
 soundEffects[currentSong] = minim.loadFile( pathway ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
 //
