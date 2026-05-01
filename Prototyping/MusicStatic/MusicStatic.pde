@@ -31,7 +31,7 @@ void setup() {
   String fileExtension_mp3 = ".mp3";
   //
 String musicDirectory = upArrow + open + upArrow + open + dependanciesFolder + open + musicFolder + open ; //Concatenation
-String soundEffectsDirectory = upArrow + open + upArrow + open + dependanciesFolder + open + soundEffectsFolder + open ; //Concatenation
+String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ; //Concatenation
 String pathway = musicDirectory + songName + fileExtension_mp3 ;
 println(pathway);
 playList[ currentSong ] = minim.loadFile( pathway ); 
