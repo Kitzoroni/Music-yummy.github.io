@@ -25,6 +25,7 @@ PFont font;
 //
 
 void setup() {
+}
   //Display
   //fullScreen(); //height width
   int appWidth = width;
@@ -162,11 +163,13 @@ fill(resetInk); //
 
 
 //
+
 void mousePressed() {
 }
 
 //End Mouse Pressed
 //
+}
 void keyPressed() {
 }
 //
