@@ -22,9 +22,9 @@ int iWhile;
 float fontSize, fontSize2, fontSize3;
 PFont font;
 //
-
-void setup() {}
-
+{
+void setup() 
+}
   //Display
   //fullScreen(); //height width
   int appWidth = width;
@@ -37,10 +37,10 @@ void setup() {}
   float TQuitY = 130;
   float TQuitWidth = appHeight*1/20;
   float TQuitHeight = appHeight*1/20;
-  songTitleDivX = beginningButtonSpace*0;
-  songTitleDivY = appHeight*3/20;
-  songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
-  songTitleDivHeight = appHeight*1.19/10;
+  float songTitleDivX = beginningButtonSpace*0;
+  float songTitleDivY = appHeight*3/20;
+  float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
+  float songTitleDivHeight = appHeight*1.19/10;
   float songName2DIV_X = appWidth*0 + beginningButtonSpace*0;
   float songName2DIV_Y = appHeight*0.65/20;
   float songName2DIV_Width = appWidth*1/2 - beginningButtonSpace*3.5;
@@ -170,7 +170,7 @@ void mousePressed() {
 //
 
 void keyPressed() {
-
+}
 //
 
 if ( key=='P' || key=='p' ) playList[currentSong].loop(0); //Simple Play, double tap possible
