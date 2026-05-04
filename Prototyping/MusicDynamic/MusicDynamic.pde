@@ -244,24 +244,3 @@ if ( key=='N' || key=='n' ) { // NEXT //See .txt for starter hint
 //if ( key=='B' || key=='b' ) ; // Previous, Back //Students to finish
 //
 if ( key=='Y' || key=='y' ) currentSong = int(random(numberOfSongs)); //random(0, numberOfSongs)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Static Music (download music home)
