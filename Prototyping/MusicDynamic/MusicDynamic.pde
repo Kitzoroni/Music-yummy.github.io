@@ -21,7 +21,6 @@ float constantDecrease;
 int iWhile;
 float fontSize, fontSize2, fontSize3;
 PFont font;
-
 //
 
 void setup() {}
@@ -164,13 +163,13 @@ fill(resetInk); //
 
 //
 
-void mousePressed() {}
-
+void mousePressed() {
+}
 
 //End Mouse Pressed
 //
 
-void keyPressed() {}
+void keyPressed() {
 
 //
 
