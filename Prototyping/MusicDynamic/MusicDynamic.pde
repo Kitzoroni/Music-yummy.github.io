@@ -24,8 +24,8 @@ PFont font;
 
 //
 
-void setup() {
-}
+void setup() {}
+
   //Display
   //fullScreen(); //height width
   int appWidth = width;
@@ -164,14 +164,14 @@ fill(resetInk); //
 
 //
 
-void mousePressed() {
-}
+void mousePressed() {}
+
 
 //End Mouse Pressed
 //
-}
-void keyPressed() {
-}
+
+void keyPressed() {}
+
 //
 
 if ( key=='P' || key=='p' ) playList[currentSong].loop(0); //Simple Play, double tap possible
