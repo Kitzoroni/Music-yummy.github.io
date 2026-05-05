@@ -166,16 +166,8 @@ float shuffleSymbolDivX25 = DivX + DivWidth*7/8;
 float shuffleSymbolDivY26 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX27 = DivX + DivWidth*3/4;
 float shuffleSymbolDivY28 = DivY + DivHeight*0.625;
-
-
-
-
-
-
-
-
-
-
+//
+//
 rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
 triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
