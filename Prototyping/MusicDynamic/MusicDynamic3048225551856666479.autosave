@@ -23,12 +23,14 @@ PFont font;
 //
 
 void setup() {
+  sizefull s); // Example size
+  // or
+  // fullScreen();
 
 
   //Display
-  //fullScreen(); //height width
-  int appWidth = width;
-  int appHeight = height;
+
+
   //DIVS, population
   int numberOfButtons = 13; //Half a button on either side as space, Center Button is Play
   int widthOfButton = appWidth/numberOfButtons;
