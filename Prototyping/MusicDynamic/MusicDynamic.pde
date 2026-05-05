@@ -1,11 +1,10 @@
-//Library - minim
+//Library minim
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-//
 //Global Variables
 Minim minim; 
 int numberOfSongs = 3;
@@ -24,6 +23,7 @@ PFont font;
 //
 
 void setup() {
+
 
   //Display
   //fullScreen(); //height width
@@ -55,7 +55,7 @@ void setup() {
   rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
   rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
-  rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
+  rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight); 
 }
 //
   //Music Loading
