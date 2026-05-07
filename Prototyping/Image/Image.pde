@@ -44,12 +44,12 @@ int image3Height = 640;
 int numberOfButtons = 11;
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float imageDivX = beginningButtonSpace;
+float imageDivX = beginningButtonSpace*7.9;
 float imageDivY = appHeight* 31.1/202;
 float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
 float imageDivHeight = appHeight*70/202;
 
-float image2DivX = beginningButtonSpace;  
+float image2DivX = beginningButtonSpace*7.87;  
 float image2DivY = appHeight*4.5/20;  
 float image2DivWidth = appWidth*63/260 - beginningButtonSpace*0;
 float image2DivHeight = appHeight*70/202;
@@ -58,9 +58,6 @@ float image3DivX = beginningButtonSpace;
 float image3DivY = appHeight*4.5/20;
 float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
 float image3DivHeight = appHeight*70/202;
-
-
-
 
 //Image: Aspect Ratio Algorithm  
 println( float(imageWidth)/ float (imageHeight) );
