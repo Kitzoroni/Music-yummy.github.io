@@ -129,7 +129,7 @@ float songSongDivY = appHeight * 95.6 / paperHeight;
 float songSongDivWidth = appWidth *  61 / paperWidth;
 float songSongDivHeight = appHeight * 115 / paperHeight;
 
-//rect( DivX, DivY, DivWidth, DivHeight );
+//DIVS
 rect( songImageDivX, songImageDivY, songImageDivWidth, songImageDivHeight );
 rect( songLyricsDivX, songLyricsDivY, songLyricsDivWidth, songLyricsDivHeight );
 rect( songScrollDivX, songScrollDivY, songScrollDivWidth, songScrollDivHeight );
