@@ -49,14 +49,14 @@ void setup() {
   float songTex3DIVY = appHeight*5/20;
   float songTex3DIVWidth = appWidth*1/2 - beginningButtonSpace*3.5;
   float songTex3DIVHeight = appHeight*1.19/10; 
-}
+
 //
   //Rect
   rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
   rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
   rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight); 
-
+}
 
 //
   //Music Loading
