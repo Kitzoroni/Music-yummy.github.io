@@ -11,23 +11,13 @@ import ddf.minim.ugens.*;
 //
 //Global Variables
 //
-void setup() {}//End Setup
-//
-void draw() {}//End Draw
-//
-void mousePressed () {} //End
-//
-void keyPressed() {} //End
-//
-// End MAIN Program
-/* DIVs 2D Rectangles
-*/
-//
-println(displayWidth, displayHeight); 
-fullScreen();
-int appWidth = displayWidth;
-int appHeight = displayHeight;
-//
+void setup() {//End Setup
+//Display
+fullscreen();
+int appWidth = width;
+int appHeight = height;
+//DIVs
+//Rect ( Divs );
 int paperWidth = 260;
 int paperHeight = 202;
 float songImageDivX = appWidth * 187 / paperWidth;
@@ -175,6 +165,19 @@ rect( songSongDivX, songSongDivY, songSongDivWidth, songSongDivHeight );
 rect( songFullDivX, songFullDivY, songFullDivWidth, songFullDivHeight );
 rect( songHeartDivX, songHeartDivY, songHeartDivWidth, songHeartDivHeight );
 rect( songDownloadDivX, songDownloadDivY, songDownloadDivWidth, songDownloadDivHeight );
+}
+//
+void draw() {}//End Draw
+//
+void mousePressed () {} //End
+//
+void keyPressed() {} //End
+//
+// End MAIN Program
+/* DIVs 2D Rectangles
+*/
+//
+
 //
 println(displayWidth, displayHeight);
 fullScreen();
