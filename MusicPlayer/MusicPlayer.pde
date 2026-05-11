@@ -178,9 +178,11 @@ void setup() {//End Setup
 }
 //
 void draw() {
+  //Music Symbol Changes: hoverover, activation. Boolean from MousePressed
 }//End Draw
 //
 void mousePressed () {
+    //Music Symbol Changes: Boolean to draw()
 } //End
 //
 void keyPressed() {
