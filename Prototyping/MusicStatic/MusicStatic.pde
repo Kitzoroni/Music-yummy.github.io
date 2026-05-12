@@ -71,22 +71,3 @@ if ( playList[currentSong]==null || soundEffects[currentSong]==null ) { //ERROR,
   //soundEffects[currentSong].play();
   printArray(playList);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Static Music (download music home)
