@@ -34,6 +34,14 @@ String songName3 = "For you";
 String soundEffect1 = "splat";
 String fileExtension_mp3 = ".mp3";
 //
+//Concatenation
+//Note, Cut Out, See Absolute Pathway:
+//See Relative Pathway: Dependencies\Music
+/*
+- See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Music
+
+ - See Relative Pathway: Dependencies\Music
+ */
 //CAUTION: Mistakes Below
 String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ; //Concatenation
 String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ; //Concatenation
@@ -63,7 +71,6 @@ if ( playList[currentSong]==null || soundEffects[currentSong]==null ) { //ERROR,
   //soundEffects[currentSong].play();
   printArray(playList);
 }
-
 
 
 
