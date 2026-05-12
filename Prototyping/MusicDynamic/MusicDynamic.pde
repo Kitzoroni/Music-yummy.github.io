@@ -22,7 +22,7 @@ float fontSize, fontSize2, fontSize3;
 PFont font;
 //
 
-void setup() {
+void setup() {}
 
 
   //Display
@@ -56,7 +56,7 @@ void setup() {
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
   rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
   rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight); 
-}
+
 
 //
   //Music Loading
@@ -72,13 +72,13 @@ void setup() {
   currentSong++;
   songName[currentSong] = "Unknown";
   currentSong++;
-  songName[currentSong] = "song";
+  songName[currentSong] = "For you";
   currentSong=0;
   //
   String soundEffect1 = "Splat";
   String fileExtension_mp3 = ".mp3";
   //
-}
+
 
 
   //CAUTION: Mistakes Below
