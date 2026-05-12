@@ -614,7 +614,7 @@ while ( textWidth(title) > TQuitWidth ) {
 fill(resetInk);
 //
 //println(fontSize, fontSize2, fontSize3);
-//
+//Music Static
 //Library - minim
 import ddf.minim.*;
 import ddf.minim.analysis.*;
@@ -645,14 +645,30 @@ String musicFolder = "Music"; //Developer Specific
 String soundEffectsFolder = "Sound Effects"; //Developer Specific
 String dependenciesFolder = "Dependencies"; //Developer Specific
 String songName = "Burn";
+String songName2 = "Unknown";
+String songName3 = "For you";
+//String songName3 = "For you";
 String soundEffect1 = "splat";
 String fileExtension_mp3 = ".mp3";
 //
+//Concatenation
+//Note, Cut Out, See Absolute Pathway:
+//See Relative Pathway: Dependencies\Music
+/*
+- See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Music
+
+ - See Relative Pathway: Dependencies\Music
+ */
 //CAUTION: Mistakes Below
-String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ; //Concatenation
+String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open;
 String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ; //Concatenation
 String pathway = musicDirectory + songName + fileExtension_mp3; //TO BE Rewritten and deleted once file is LOADED
+String pathway2 = musicDirectory + songName2 + fileExtension_mp3;
+String pathway3 = musicDirectory + songName3 + fileExtension_mp3;
+//String pathway3 = musicDirectory + songName3 + fileExtension_mp3;
 println(pathway);
+println(pathway2);
+println(pathway3);
 playList[ currentSong ] = minim.loadFile( pathway ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
 pathway = soundEffectsDirectory + soundEffect1 + fileExtension_mp3; //Rewritting FILE
 println(pathway);
