@@ -43,7 +43,7 @@ String fileExtension_mp3 = ".mp3";
  - See Relative Pathway: Dependencies\Music
  */
 //CAUTION: Mistakes Below
-String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open ; //Concatenation
+String musicDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + musicFolder + open;
 String soundEffectsDirectory = upArrow + open + upArrow + open + dependenciesFolder + open + soundEffectsFolder + open ; //Concatenation
 String pathway = musicDirectory + songName + fileExtension_mp3; //TO BE Rewritten and deleted once file is LOADED
 String pathway2 = musicDirectory + songName2 + fileExtension_mp3;
