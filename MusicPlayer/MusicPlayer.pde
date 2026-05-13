@@ -421,7 +421,12 @@ line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSym
 triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
 triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
   //rect( songTitle
-  
+  image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
+image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
+image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdjusted);
+image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
+image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
   //
   //2D music symbol shapes
   //
