@@ -428,7 +428,6 @@ image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
 image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
   //
-  //2D music symbol shapes
   //
   //Images and aspect ratio algorithm
 println( float(imageWidth)/ float (imageHeight) );
