@@ -177,45 +177,12 @@ int appHeight = displayHeight;
 //Population using unitless ratios (i.e. millimeters to pixels)
   //
   //DIVS
-  println(displayWidth, displayHeight);
-float DivX = appWidth * 1/4;
+  float DivX = appWidth * 1/4;
 float DivY = appHeight * 1/4;
 float DivWidth = appWidth * 1/2;
 float DivHeight = appHeight * 1/2;
-  //rect
-  rect( DivX, DivY, DivWidth, DivHeight );
-rect( DivX, DivY, DivWidth, DivHeight );
-triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
-triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
-triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
-triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
-rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
-triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
-rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
-triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
-triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
-rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
-rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
-triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
-triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
-triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
-rect ( pinSymbolDivX7, pinSymbolDivY8, pinSymbolDivWidth9, pinSymbolDivHeight10 );
-triangle ( downloadSymbolDivX1, downloadSymbolDivY2, downloadSymbolDivX3, downloadSymbolDivY4, downloadSymbolDivX5, downloadSymbolDivY6 );
-rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
-line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13, downloadSymbolDivHeight14 );
-line ( heartSymbolDivX1, heartSymbolDivY2, heartSymbolDivX3, heartSymbolDivY4 );
-line ( heartSymbolDivX5, heartSymbolDivY6, heartSymbolDivX7, heartSymbolDivY8 );
-line ( heartSymbolDivX9, heartSymbolDivY10, heartSymbolDivX11, heartSymbolDivY12 );
-line ( heartSymbolDivX13, heartSymbolDivY14, heartSymbolDivX15, heartSymbolDivY16 );
-line ( heartSymbolDivX17, heartSymbolDivY18, heartSymbolDivX19, heartSymbolDivY20 );
-line ( heartSymbolDivX21, heartSymbolDivY22, heartSymbolDivX23, heartSymbolDivY24 );
-line ( shuffleSymbolDivX1, shuffleSymbolDivY2, shuffleSymbolDivX3, shuffleSymbolDivY4 );
-line ( shuffleSymbolDivX5, shuffleSymbolDivY6, shuffleSymbolDivX7, shuffleSymbolDivY8 );
-line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 );
-line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
-triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
-triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
-  //Symbols
+  //
+  //2D Music Symbols
   float playSymbolDivX1 = DivX + DivWidth*1/4;
 float playSymbolDivY2 = DivY +  DivHeight*1/4;
 float playSymbolDivX3 = DivX + DivWidth*2/4;
@@ -327,11 +294,11 @@ float heartSymbolDivY4 = DivY + DivHeight*1/2;
 float heartSymbolDivX5 = DivX + DivWidth*1/4;
 float heartSymbolDivY6 = DivY + DivHeight*1/4;
 float heartSymbolDivX7 = DivX + DivWidth*0;
-float heartSymbolDivY8 = DivY + DivHeight*1/2;
+float heartSymbolDivY8 = DivY + DivHeight*1/2;  
 float heartSymbolDivX9 = DivX + DivWidth*0;
 float heartSymbolDivY10 = DivY + DivHeight*1/2;
 float heartSymbolDivX11 = DivX + DivWidth*1/2;
-float heartSymbolDivY12 = DivY + DivHeight*1;
+float heartSymbolDivY12 = DivY + DivHeight*1;  
 float heartSymbolDivX13 = DivX + DivWidth*1/2;
 float heartSymbolDivY14 = DivY + DivHeight*1;
 float heartSymbolDivX15 = DivX + DivWidth*1;
@@ -374,21 +341,121 @@ float shuffleSymbolDivY26 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX27 = DivX + DivWidth*3/4;
 float shuffleSymbolDivY28 = DivY + DivHeight*0.625;
   //
-  //2D Music Symbols
-  //
   //Directory or Pathway to Images
+  String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
+String pathway = imageDirectory + imageName + fileExtension;
+String pathway2 = imageDirectory + imageName2 + fileExtension;
+String pathway3 = imageDirectory + imageName3 + fileExtension;
   //String-Vars of Folders and File Names
+  String upArrow = "..";
+String dependenciesFolder = "Dependencies";
+String imagesFolder = "Images";
+String imageName = "unknownSong";
+String imageName2 = "burnSong";
+String imageName3 = "foryouSong";
+String fileExtension = ".jpg";
+String Open = "/";
   //Concatenation of Pathways
-  //PImage Vars + Divisions (width and height)_
+  
+  //PImage Vars + Divisions (width and height)
+  PImage image, image2, image3;
+image = loadImage( pathway );
+image2 = loadImage( pathway2 );
+image3 = loadImage( pathway3 );
+int imageWidth = 300;
+int imageHeight = 300;
+int image2Width = 500;
+int image2Height = 500;
+int image3Width = 640;
+int image3Height = 640;
   //
   //DIVS
+  int numberOfButtons = 11;
+int widthOfButton = appWidth/numberOfButtons;
+int beginningButtonSpace = widthOfButton;
+float imageDivX = beginningButtonSpace*7.9;
+float imageDivY = appHeight* 31.1/202;
+float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float imageDivHeight = appHeight*70/202;
+
+float image2DivX = beginningButtonSpace*7.9;  
+float image2DivY = appHeight*4.5/20;  
+float image2DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image2DivHeight = appHeight*70/202;
+
+float image3DivX = beginningButtonSpace*7.9;
+float image3DivY = appHeight*4.5/20;
+float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image3DivHeight = appHeight*70/202;
   //rect (DivX
+  rect( DivX, DivY, DivWidth, DivHeight );
+rect( DivX, DivY, DivWidth, DivHeight );
+triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
+triangle( fastSymbolDivX1, fastSymbolDivY2, fastSymbolDivX3, fastSymbolDivY4, fastSymbolDivX5, fastSymbolDivY6 );
+triangle( fastSymbolDivX7, fastSymbolDivY8, fastSymbolDivX9, fastSymbolDivY10, fastSymbolDivX11, fastSymbolDivY12 );
+triangle( nextSymbolDivX1, nextSymbolDivY2, nextSymbolDivX3, nextSymbolDivY4, nextSymbolDivX5, nextSymbolDivY6 );
+rect( nextSymbolDivX7, nextSymbolDivY8, nextSymbolDivWidth9, nextSymbolDivHeight10 );
+triangle( backSymbolDivX1, backSymbolDivY2, backSymbolDivX3, backSymbolDivY4, backSymbolDivX5, backSymbolDivY6 );
+rect( backSymbolDivX7, backSymbolDivY8, backSymbolDivWidth9, backSymbolDivHeight10 );
+triangle( rewindSymbolDivX1, rewindSymbolDivY2, rewindSymbolDivX3, rewindSymbolDivY4, rewindSymbolDivX5, rewindSymbolDivY6 );
+triangle( rewindSymbolDivX7, rewindSymbolDivY8, rewindSymbolDivX9, rewindSymbolDivY10, rewindSymbolDivX11, rewindSymbolDivY12 );
+rect( pauseSymbolDivX1, pauseSymbolDivY2, pauseSymbolDivWidth3, pauseSymbolDivHeight4 );
+rect ( pauseSymbolDivX5, pauseSymbolDivY6, pauseSymbolDivWidth7, pauseSymbolDivHeight8 );
+triangle ( exitSymbolDivX1, exitSymbolDivY2, exitSymbolDivX3, exitSymbolDivY4, exitSymbolDivX5, exitSymbolDivY6 );
+triangle ( exitSymbolDivX7, exitSymbolDivY8, exitSymbolDivX9, exitSymbolDivY10, exitSymbolDivX11, exitSymbolDivY12 );
+triangle ( pinSymbolDivX1, pinSymbolDivY2, pinSymbolDivX3, pinSymbolDivY4, pinSymbolDivX5, pinSymbolDivY6 );
+rect ( pinSymbolDivX7, pinSymbolDivY8, pinSymbolDivWidth9, pinSymbolDivHeight10 );
+triangle ( downloadSymbolDivX1, downloadSymbolDivY2, downloadSymbolDivX3, downloadSymbolDivY4, downloadSymbolDivX5, downloadSymbolDivY6 );
+rect ( downloadSymbolDivX7, downloadSymbolDivY8, downloadSymbolDivWidth9, downloadSymbolDivHeight10 );
+line ( downloadSymbolDivX11, downloadSymbolDivY12, downloadSymbolDivWidth13, downloadSymbolDivHeight14 );
+line ( heartSymbolDivX1, heartSymbolDivY2, heartSymbolDivX3, heartSymbolDivY4 );
+line ( heartSymbolDivX5, heartSymbolDivY6, heartSymbolDivX7, heartSymbolDivY8 );
+line ( heartSymbolDivX9, heartSymbolDivY10, heartSymbolDivX11, heartSymbolDivY12 );
+line ( heartSymbolDivX13, heartSymbolDivY14, heartSymbolDivX15, heartSymbolDivY16 );
+line ( heartSymbolDivX17, heartSymbolDivY18, heartSymbolDivX19, heartSymbolDivY20 );
+line ( heartSymbolDivX21, heartSymbolDivY22, heartSymbolDivX23, heartSymbolDivY24 );
+line ( shuffleSymbolDivX1, shuffleSymbolDivY2, shuffleSymbolDivX3, shuffleSymbolDivY4 );
+line ( shuffleSymbolDivX5, shuffleSymbolDivY6, shuffleSymbolDivX7, shuffleSymbolDivY8 );
+line ( shuffleSymbolDivX9, shuffleSymbolDivY10, shuffleSymbolDivX11, shuffleSymbolDivY12 );
+line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
+triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
+triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
   //rect( songTitle
+  
   //
   //2D music symbol shapes
   //
   //Images and aspect ratio algorithm
+println( float(imageWidth)/ float (imageHeight) );
+//Ternary Operator for Aspect Ratio
+float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
+println(imageAspectRatio_GreatOne);
+float imageDivWidthAdjusted = imageDivWidth;
+float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
+imageDivWidthAdjusted = 0.99;
+
+float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
+println(image2AspectRatio_GreatOne);
+float image2DivWidthAdjusted = image2DivWidth;
+float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
+image2DivWidthAdjusted = 0.99;
+
+float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
+println(image3AspectRatio_GreatOne);
+float image3DivWidthAdjusted = image3DivWidth;
+float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
+image3DivWidthAdjusted = 0.99;
+//
+rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
+rect(image3DivX, image3DivY, image3DivWidth, image3DivHeight);
   //image();
+  image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
+image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
+image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdjusted);
+image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
+image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
+image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
   
 }
 //
