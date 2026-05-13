@@ -169,7 +169,7 @@ void setup() {//End Setup
   rect( songHeartDivX, songHeartDivY, songHeartDivWidth, songHeartDivHeight );
   rect( songDownloadDivX, songDownloadDivY, songDownloadDivWidth, songDownloadDivHeight );
   //
-  //Music symbols
+//Symbols
   fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
@@ -373,6 +373,23 @@ float shuffleSymbolDivX25 = DivX + DivWidth*7/8;
 float shuffleSymbolDivY26 = DivY + DivHeight*3/4;
 float shuffleSymbolDivX27 = DivX + DivWidth*3/4;
 float shuffleSymbolDivY28 = DivY + DivHeight*0.625;
+  //
+  //2D Music Symbols
+  //
+  //Directory or Pathway to Images
+  //String-Vars of Folders and File Names
+  //Concatenation of Pathways
+  //PImage Vars + Divisions (width and height)_
+  //
+  //DIVS
+  //rect (DivX
+  //rect( songTitle
+  //
+  //2D music symbol shapes
+  //
+  //Images and aspect ratio algorithm
+  //image();
+  
 }
 //
 void draw() {
