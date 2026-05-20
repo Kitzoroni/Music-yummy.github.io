@@ -465,6 +465,18 @@ image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdj
 image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
 image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
+
+//rect( DivX, DivY, DivWidth, DivHeight );
+//rect( songTitleDivX, songTitleDivY, songTitleDivWidth ayayayaya
+//
+//Drawing Text - Formatting Text Functions
+//
+//Drawing Text 0 Font Size Adjustment (WHILE Loop)
+//
+//Draw Text with adjusted DIV Variables
+//
+//Images & Aspect Ratio
+
   
 }
 //
