@@ -472,24 +472,12 @@ rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
 rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
 //
+//E
 //rect( songTitleDivX, songTitleDivY, songTitleDivWidth ayayayaya
-float constantDecrease = 0.99;
-int iWhile=0;
-textFont(font, fontSize); //must include textSize() before text() & textWidth()
-while ( textWidth(title) > songTitleDivWidth ) {
-  //println("While #1"); //Infinite WHILE Check
-  iWhile++;
-  if ( iWhile>10000 ) { //>1000 means -1 text or i
-    println("Infinite WHILE Loop");
-    exit();
-  }
-  fontSize *= constantDecrease;
-  textFont(font, fontSize); //happens before text()
-}
-text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
-text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
-text( text, songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVY );
-text( quit, TQuitX, TQuitY, TQuitWidth, TQuitY );
+rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
+rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
+rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
 //
 //Drawing Text - Formatting Text Functions
 int numberOfButtons = 11;
@@ -558,6 +546,7 @@ float image3DivY = appHeight*4.5/20;
 float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
 float image3DivHeight = appHeight*70/202;
 //
+//
 
   
 }
@@ -589,7 +578,6 @@ void keyPressed() {
  */
 //
 //Display
-fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
@@ -820,7 +808,6 @@ AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
 int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
 //Display
-size( 700, 500 ); //width //height
 //fullScreen();  //displayWidth //displayHeight
 int appWidth = width; //Best Practice
 int appHeight = height;
