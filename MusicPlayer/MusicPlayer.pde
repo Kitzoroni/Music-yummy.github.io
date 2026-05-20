@@ -467,15 +467,97 @@ image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
 image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
 
 //rect( DivX, DivY, DivWidth, DivHeight );
+rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
+rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
+rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
+//
 //rect( songTitleDivX, songTitleDivY, songTitleDivWidth ayayayaya
+float constantDecrease = 0.99;
+int iWhile=0;
+textFont(font, fontSize); //must include textSize() before text() & textWidth()
+while ( textWidth(title) > songTitleDivWidth ) {
+  //println("While #1"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
+  }
+  fontSize *= constantDecrease;
+  textFont(font, fontSize); //happens before text()
+}
+text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
+text( text, songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVY );
+text( quit, TQuitX, TQuitY, TQuitWidth, TQuitY );
 //
 //Drawing Text - Formatting Text Functions
+int numberOfButtons = 11;
+int widthOfButton = appWidth/numberOfButtons;
+int beginningButtonSpace = widthOfButton;
+float imageDivX = beginningButtonSpace*7.9;
+float imageDivY = appHeight* 31.1/202;
+float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float imageDivHeight = appHeight*70/202;
+
+float image2DivX = beginningButtonSpace*7.9;  
+float image2DivY = appHeight*4.5/20;  
+float image2DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image2DivHeight = appHeight*70/202;
+
+float image3DivX = beginningButtonSpace*7.9;
+float image3DivY = appHeight*4.5/20;
+float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image3DivHeight = appHeight*70/202;
 //
 //Drawing Text 0 Font Size Adjustment (WHILE Loop)
+textFont(font, fontSize2); //must include textSize() before text() & textWidth()
+iWhile=0;
+while ( textWidth(title) > songName2DIV_Width ) {
+  //println("While #2"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
+  }
+  fontSize2 *= constantDecrease;
+  textFont(font, fontSize2);
+}
+text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
+//
+textFont(font, fontSize3); //must include textSize() before text() & textWidth()
+iWhile=0;
+while ( textWidth(title) > TQuitWidth ) {
+  //println("While #3"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
+  }
+  fontSize3 *= constantDecrease;
+  textFont(font, fontSize3);
+}
+fill(resetInk);
 //
 //Draw Text with adjusted DIV Variables
+int numberOfButtons = 11;
+int widthOfButton = appWidth/numberOfButtons;
+int beginningButtonSpace = widthOfButton;
+float imageDivX = beginningButtonSpace*7.9;
+float imageDivY = appHeight* 31.1/202;
+float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float imageDivHeight = appHeight*70/202;
+
+float image2DivX = beginningButtonSpace*7.9;  
+float image2DivY = appHeight*4.5/20;  
+float image2DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image2DivHeight = appHeight*70/202;
+
+float image3DivX = beginningButtonSpace*7.9;
+float image3DivY = appHeight*4.5/20;
+float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
+float image3DivHeight = appHeight*70/202;
 //
-//Images & Aspect Ratio
 
   
 }
@@ -526,6 +608,7 @@ String Open = "/";
 /*
 - See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Images
  
+ //DELETE here prob
  - See Relative Pathway: Dependencies\Images
  */
 String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
