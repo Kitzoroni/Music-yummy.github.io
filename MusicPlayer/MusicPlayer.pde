@@ -182,7 +182,12 @@ float DivY = appHeight * 1/4;
 float DivWidth = appWidth * 1/2;
 float DivHeight = appHeight * 1/2;
   //
-  //2D Music Symbols
+  //Text Setup
+  //
+  //Literal Text String
+  //
+  //Font Size with DIV-Height Variables
+  //2D Music Symbols and Text & font variables
   float playSymbolDivX1 = DivX + DivWidth*1/4;
 float playSymbolDivY2 = DivY +  DivHeight*1/4;
 float playSymbolDivX3 = DivX + DivWidth*2/4;
