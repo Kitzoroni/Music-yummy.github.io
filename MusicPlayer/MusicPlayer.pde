@@ -467,7 +467,7 @@ void setup() {//End Setup
   image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
   image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
 
-/*
+/* TEXT IMAGES add and check pls
 
   //rect( DivX, DivY, DivWidth, DivHeight );
   rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
@@ -475,7 +475,7 @@ void setup() {//End Setup
   rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
   rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
   //
-  //E
+  //
   //rect( songTitleDivX, songTitleDivY, songTitleDivWidth ayayayaya
   rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
