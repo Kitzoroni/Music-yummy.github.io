@@ -14,7 +14,7 @@ String imageName2 = "burnSong";
 String imageName3 = "foryouSong";
 String fileExtension = ".jpg";
 String Open = "/";
-//
+// 
 //Concatenation
 //Note, Cut Out, See Absolute Pathway:
 //See Relative Pathway: Dependencies\Images
