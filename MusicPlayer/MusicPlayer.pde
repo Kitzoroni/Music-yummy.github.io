@@ -509,7 +509,7 @@ textAlign (CENTER, TOP);
       println("Infinite WHILE Loop");
       exit();
     }
-    fontSize3 *= constantDecrease;
+    fontSize3 *= constantDecrease; 
     textFont(font, fontSize3);
   }
   fill(resetInk);
