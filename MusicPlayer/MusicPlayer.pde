@@ -362,7 +362,7 @@ void setup() {//End Setup
   println(pathway);
   //Concatenation of Pathways
 
-  //PImage Vars + Divisions (width and height)
+  //PImage Vars + Divisions (width and height) and while loop [Drawing Text - Font Size Adustement (WHILE Loop)] HERE
   PImage image, image2, image3;
   image = loadImage( pathway );
   image2 = loadImage( pathway2 );
@@ -375,7 +375,7 @@ void setup() {//End Setup
   int image3Height = 640;
   //
   //DIVS
-  int numberOfButtons = 11;
+  int numberOfButtons = 13;
   int widthOfButton = appWidth/numberOfButtons;
   int beginningButtonSpace = widthOfButton;
   float imageDivX = beginningButtonSpace*7.9;
@@ -393,7 +393,7 @@ void setup() {//End Setup
   float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
   float image3DivHeight = appHeight*70/202;
   //
-  //rect (DivX
+  //rect and DIV text
   rect( DivX, DivY, DivWidth, DivHeight );
   rect( DivX, DivY, DivWidth, DivHeight );
   triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6 );
@@ -426,6 +426,25 @@ void setup() {//End Setup
   line ( shuffleSymbolDivX13, shuffleSymbolDivY14, shuffleSymbolDivX15, shuffleSymbolDivY16 );
   triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
   triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
+
+float TQuitX = appWidth - appHeight*12.6/20;
+float TQuitY = 130;
+float TQuitWidth = appHeight*1/20;
+float TQuitHeight = appHeight*1/20;
+float songTitleDivX = beginningButtonSpace*0;
+float songTitleDivY = appHeight*3/20;
+float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
+float songTitleDivHeight = appHeight*1.19/10;
+
+float songName2DIV_X = appWidth*0 + beginningButtonSpace*0;
+float songName2DIV_Y = appHeight*0.65/20;
+float songName2DIV_Width = appWidth*1/2 - beginningButtonSpace*3.5;
+float songName2DIV_Height = appHeight*1.19/10;
+
+float songTex3DIVX = appWidth*0 + beginningButtonSpace*0;
+float songTex3DIVY = appHeight*5/20;
+float songTex3DIVWidth = appWidth*1/2 - beginningButtonSpace*3.5;
+float songTex3DIVHeight = appHeight*1.19/10;
   //rect( songTitle
   //image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
   //image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
@@ -435,7 +454,7 @@ void setup() {//End Setup
   image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
   //
   //
-  //Images and aspect ratio algorithm
+  //Images and aspect ratio algorithm and loop
   println( float(imageWidth)/ float (imageHeight) );
   //Ternary Operator for Aspect Ratio
   float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
@@ -515,23 +534,7 @@ textAlign (CENTER, TOP);
   fill(resetInk);
   //
   //Draw Text with adjusted DIV Variables
-  int numberOfButtons = 11;
-  int widthOfButton = appWidth/numberOfButtons;
-  int beginningButtonSpace = widthOfButton;
-  float imageDivX = beginningButtonSpace*7.9;
-  float imageDivY = appHeight* 31.1/202;
-  float imageDivWidth = appWidth*63/260 - beginningButtonSpace*0;
-  float imageDivHeight = appHeight*70/202;
-
-  float image2DivX = beginningButtonSpace*7.9;
-  float image2DivY = appHeight*4.5/20;
-  float image2DivWidth = appWidth*63/260 - beginningButtonSpace*0;
-  float image2DivHeight = appHeight*70/202;
-
-  float image3DivX = beginningButtonSpace*7.9;
-  float image3DivY = appHeight*4.5/20;
-  float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
-  float image3DivHeight = appHeight*70/202;
+  
   //
   //Strings
 String title = "Burn";
