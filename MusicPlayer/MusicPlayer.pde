@@ -498,9 +498,6 @@ rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
 rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
 rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
 rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
-
-
-
 //
 //Strings, Text, Literal
 String title = "Burn";
