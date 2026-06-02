@@ -629,7 +629,6 @@ String Open = "/";
 
 - See Absolute Pathway: C:\Users\e.padilla\Documents\GitHub\Music-yummy.github.io\Dependencies\Images
  
- //DELETE here prob
  - See Relative Pathway: Dependencies\Images
 
 String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
