@@ -392,6 +392,26 @@ void setup() {//End Setup
   float image3DivY = appHeight*4.5/20;
   float image3DivWidth = appWidth*63/260 - beginningButtonSpace*0;
   float image3DivHeight = appHeight*70/202;
+  
+  //DIVS
+float TQuitX = appWidth - appHeight*12.6/20;
+float TQuitY = 130;
+float TQuitWidth = appHeight*1/20;
+float TQuitHeight = appHeight*1/20;
+float songTitleDivX = beginningButtonSpace*0;
+float songTitleDivY = appHeight*3/20;
+float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
+float songTitleDivHeight = appHeight*1.19/10;
+
+float songName2DIV_X = appWidth*0 + beginningButtonSpace*0;
+float songName2DIV_Y = appHeight*0.65/20;
+float songName2DIV_Width = appWidth*1/2 - beginningButtonSpace*3.5;
+float songName2DIV_Height = appHeight*1.19/10;
+
+float songTex3DIVX = appWidth*0 + beginningButtonSpace*0;
+float songTex3DIVY = appHeight*5/20;
+float songTex3DIVWidth = appWidth*1/2 - beginningButtonSpace*3.5;
+float songTex3DIVHeight = appHeight*1.19/10;
   //
   //rect and DIV text
   rect( DivX, DivY, DivWidth, DivHeight );
@@ -427,24 +447,7 @@ void setup() {//End Setup
   triangle ( shuffleSymbolDivX17, shuffleSymbolDivY18, shuffleSymbolDivX19, shuffleSymbolDivY20, shuffleSymbolDivX21, shuffleSymbolDivY22 );
   triangle ( shuffleSymbolDivX23, shuffleSymbolDivY24, shuffleSymbolDivX25, shuffleSymbolDivY26, shuffleSymbolDivX27, shuffleSymbolDivY28 );
 
-float TQuitX = appWidth - appHeight*12.6/20;
-float TQuitY = 130;
-float TQuitWidth = appHeight*1/20;
-float TQuitHeight = appHeight*1/20;
-float songTitleDivX = beginningButtonSpace*0;
-float songTitleDivY = appHeight*3/20;
-float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*3.5;
-float songTitleDivHeight = appHeight*1.19/10;
 
-float songName2DIV_X = appWidth*0 + beginningButtonSpace*0;
-float songName2DIV_Y = appHeight*0.65/20;
-float songName2DIV_Width = appWidth*1/2 - beginningButtonSpace*3.5;
-float songName2DIV_Height = appHeight*1.19/10;
-
-float songTex3DIVX = appWidth*0 + beginningButtonSpace*0;
-float songTex3DIVY = appHeight*5/20;
-float songTex3DIVWidth = appWidth*1/2 - beginningButtonSpace*3.5;
-float songTex3DIVHeight = appHeight*1.19/10;
   //rect( songTitle
   //image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
   //image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
@@ -486,178 +489,103 @@ float songTex3DIVHeight = appHeight*1.19/10;
   image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
   image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
 
-/* TEXT IMAGES add and check pls
+// /* TEXT IMAGES add and check pls
 
-  //rect( DivX, DivY, DivWidth, DivHeight );
-  rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
-  rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
-  rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
-  rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
- 
-  //
-  //Drawing Text - Formatting Text Functions
+
+//
+//DIV: Image
+rect(TQuitX, TQuitY, TQuitWidth, TQuitHeight);
+rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+rect(songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height);
+rect(songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVHeight);
+
+
+
+//
+//Strings, Text, Literal
+String title = "Burn";
+String name = "Unknown";
+String text = "For you";
+String quit = "X";
+//
+// Fonts from OS
+//rect(height) is biggest font is word is the smallest
+float fontSize = songTitleDivHeight; //1:1 Font Height to rectHeight
+float fontSize2 = songName2DIV_Height; 
+float fontSize3 = TQuitHeight; 
+PFont font; //Font Variable Name, able to have more than one Font
+String constantia = "Constantia"; //Spelling of the Font Matters, see PFont.list() v Create Font above
+font = createFont(constantia, fontSize);
+//
+//Drawing Text
 color redInk = #A53F52; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
 color whiteInk = #FFFFFF; //GreyScale is 255
 color resetInk = whiteInk;
 fill(redInk); //Ink, hexidecimal copied from Color Selector
 //Grayscale 0-255
-textAlign (CENTER, TOP); 
-
-  //
-  //Drawing Text 0 Font Size Adjustment (WHILE Loop)
-  textFont(font, fontSize2); //must include textSize() before text() & textWidth()
-  iWhile=0;
-  while ( textWidth(title) > songName2DIV_Width ) {
-    //println("While #2"); //Infinite WHILE Check
-    iWhile++;
-    if ( iWhile>10000 ) { //>1000 means -1 text or i
-      println("Infinite WHILE Loop");
-      exit();
-    }
-    fontSize2 *= constantDecrease;
-    textFont(font, fontSize2);
+textAlign (CENTER, TOP); //Align X&Y, see Processing.org / Reference
+//Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+//
+//Aspect Ratio for Constantia-Italic
+float fontSizeConstantia = 10; //Default fontSize for 100%
+float divHeightConstantia = songTitleDivHeight;
+float constantiaAspectRatio = fontSizeConstantia / divHeightConstantia; //#<1
+float textAdjustment = 7;
+fontSize = songTitleDivHeight*constantiaAspectRatio * textAdjustment;
+fontSize2 = songName2DIV_Height*constantiaAspectRatio * textAdjustment;
+fontSize3 = songTex3DIVHeight*constantiaAspectRatio * textAdjustment;
+//
+// Procedure Passing RECT(#2) && fontSize(RECT#)
+float constantDecrease = 0.99;
+int iWhile=0;
+textFont(font, fontSize); //must include textSize() before text() & textWidth()
+while ( textWidth(title) > songTitleDivWidth ) {
+  //println("While #1"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
   }
-  text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
-  //
-  textFont(font, fontSize3); //must include textSize() before text() & textWidth()
-  iWhile=0;
-  while ( textWidth(title) > TQuitWidth ) {
-    //println("While #3"); //Infinite WHILE Check
-    iWhile++;
-    if ( iWhile>10000 ) { //>1000 means -1 text or i
-      println("Infinite WHILE Loop");
-      exit();
-    }
-    fontSize3 *= constantDecrease;
-    textFont(font, fontSize3);
+  fontSize *= constantDecrease;
+  textFont(font, fontSize); //happens before text()
+}
+text( title, songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
+text( text, songTex3DIVX, songTex3DIVY, songTex3DIVWidth, songTex3DIVY );
+text( quit, TQuitX, TQuitY, TQuitWidth, TQuitY );
+//
+textFont(font, fontSize2); //must include textSize() before text() & textWidth()
+iWhile=0;
+while ( textWidth(title) > songName2DIV_Width ) {
+  //println("While #2"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
   }
-  fill(resetInk);
-  //
-  //Draw Text with adjusted DIV Variables
+  fontSize2 *= constantDecrease;
+  textFont(font, fontSize2);
+}
+text( name, songName2DIV_X, songName2DIV_Y, songName2DIV_Width, songName2DIV_Height );
+//
+textFont(font, fontSize3); //must include textSize() before text() & textWidth()
+iWhile=0;
+while ( textWidth(title) > TQuitWidth ) {
+  //println("While #3"); //Infinite WHILE Check
+  iWhile++;
+  if ( iWhile>10000 ) { //>1000 means -1 text or i
+    println("Infinite WHILE Loop");
+    exit();
+  }
+  fontSize3 *= constantDecrease;
+  textFont(font, fontSize3);
+}
+fill(resetInk);
+//
+
   
   //
-  //Strings
-String title = "Burn";
-String name = "Unknown";
-String text = "For you";
-String quit = "X";
 
-//IMAGES
-  //Images & Aspect Ratio Algoritrhm, including WHILE Loop
-image(image, imageDivX, imageDivY, imageDivWidthAdjusted, imageDivHeightAdjusted);
-image(image2, image2DivX, image2DivY, image2DivWidthAdjusted, image2DivHeightAdjusted);
-image(image3, image3DivX, image3DivY, image3DivWidthAdjusted, image3DivHeightAdjusted);
-image(image, imageDivX, imageDivY, imageDivWidth, imageDivHeight);
-image(image2, image2DivX, image2DivY, image2DivWidth, image2DivHeight);
-image(image3, image3DivX, image3DivY, image3DivWidth, image3DivHeight);
-
-println( float(imageWidth)/ float (imageHeight) );
-//Ternary Operator for Aspect Ratio
-float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
-println(imageAspectRatio_GreatOne);
-float imageDivWidthAdjusted = imageDivWidth;
-float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
-imageDivWidthAdjusted = 0.99;
-
-float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
-println(image2AspectRatio_GreatOne);
-float image2DivWidthAdjusted = image2DivWidth;
-float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
-image2DivWidthAdjusted = 0.99;
-
-float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
-println(image3AspectRatio_GreatOne);
-float image3DivWidthAdjusted = image3DivWidth;
-float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
-image3DivWidthAdjusted = 0.99;
-
-  //Aspect Ratio for Constantia-Italic
-  float fontSizeConstantia = 10; //Default fontSize for 100%
-  float divHeightConstantia = songTitleDivHeight;
-  float constantiaAspectRatio = fontSizeConstantia / divHeightConstantia; //#<1
-  float textAdjustment = 7;
-  fontSize = songTitleDivHeight*constantiaAspectRatio * textAdjustment;
-  fontSize2 = songName2DIV_Height*constantiaAspectRatio * textAdjustment;
-  fontSize3 = songTex3DIVHeight*constantiaAspectRatio * textAdjustment;
-
-  println( float(imageWidth)/ float (imageHeight) );
-  //Ternary Operator for Aspect Ratio
-  float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
-  println(imageAspectRatio_GreatOne);
-  float imageDivWidthAdjusted = imageDivWidth;
-  float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
-  imageDivWidthAdjusted = 0.99;
-
-  float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
-  println(image2AspectRatio_GreatOne);
-  float image2DivWidthAdjusted = image2DivWidth;
-  float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
-  image2DivWidthAdjusted = 0.99;
-
-  float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
-  println(image3AspectRatio_GreatOne);
-  float image3DivWidthAdjusted = image3DivWidth;
-  float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
-  image3DivWidthAdjusted = 0.99;
-  
-  //
-  //Image DIVS
-  rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
-rect(image2DivX, image2DivY, image2DivWidth, image2DivHeight);
-rect(image3DivX, image3DivY, image3DivWidth, image3DivHeight);
-
-//
-//Image Aspect Ratio Algorithm  
-println( float(imageWidth)/ float (imageHeight) );
-//Ternary Operator for Aspect Ratio
-float imageAspectRatio_GreatOne = ( imageWidth > imageHeight ) ?  float(imageWidth) / float(imageHeight) : float(imageHeight) ;
-println(imageAspectRatio_GreatOne);
-float imageDivWidthAdjusted = imageDivWidth;
-float imageDivHeightAdjusted = ( imageWidth >= imageDivWidth ) ? imageDivWidthAdjusted * imageAspectRatio_GreatOne : imageDivWidthAdjusted / imageAspectRatio_GreatOne ;
-imageDivWidthAdjusted = 0.99;
-
-float image2AspectRatio_GreatOne = ( image2Width > image2Height ) ?  float(image2Width) / float(image2Height) : float(image2Height) ;
-println(image2AspectRatio_GreatOne);
-float image2DivWidthAdjusted = image2DivWidth;
-float image2DivHeightAdjusted = ( image2Width >= image2DivWidth ) ? image2DivWidthAdjusted * image2AspectRatio_GreatOne : image2DivWidthAdjusted / image2AspectRatio_GreatOne ;
-image2DivWidthAdjusted = 0.99;
-
-float image3AspectRatio_GreatOne = ( image3Width > image3Height ) ?  float(image3Width) / float(image3Height) : float(image3Height) ;
-println(image3AspectRatio_GreatOne);
-float image3DivWidthAdjusted = image3DivWidth;
-float image3DivHeightAdjusted = ( image3Width >= image3DivWidth ) ? image3DivWidthAdjusted * image3AspectRatio_GreatOne : image3DivWidthAdjusted / image3AspectRatio_GreatOne ;
-image3DivWidthAdjusted = 0.99;
-
-//
-//Pathway string, PI
-String upArrow = "..";
-String dependenciesFolder = "Dependencies";
-String imagesFolder = "Images";
-String imageName = "unknownSong";
-String imageName2 = "burnSong";
-String imageName3 = "foryouSong";
-String fileExtension = ".jpg";
-String Open = "/";
-//
-String imageDirectory = upArrow + Open + upArrow + Open + dependenciesFolder + Open + imagesFolder + Open;
-String pathway = imageDirectory + imageName + fileExtension;
-String pathway2 = imageDirectory + imageName2 + fileExtension;
-String pathway3 = imageDirectory + imageName3 + fileExtension;
-//println(pathway);
-//
-PImage image, image2, image3;
-image = loadImage( pathway );
-image2 = loadImage( pathway2 );
-image3 = loadImage( pathway3 );
-int imageWidth = 300;
-int imageHeight = 300;
-int image2Width = 500;
-int image2Height = 500;
-int image3Width = 640;
-int image3Height = 640;
-  
-  //
-  */
 }
 //
 void draw() {
@@ -792,7 +720,6 @@ int appHeight = displayHeight;
 int numberOfButtons = 13; //Half a button on either side as space, Center Button is Play
 int widthOfButton = appWidth/numberOfButtons;
 int beginningButtonSpace = widthOfButton;
-float TQuitX = appWidth - appHeight*12.6/20;
 float TQuitY = 130;
 float TQuitWidth = appHeight*1/20;
 float TQuitHeight = appHeight*1/20;
