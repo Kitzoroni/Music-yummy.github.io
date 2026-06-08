@@ -1062,10 +1062,7 @@ void mousePressed() {
 //
 
 void keyPressed() {
-}
-//
-
-if ( key=='P' || key=='p' ) playList[currentSong].loop(0); //Simple Play, double tap possible
+  if ( key=='P' || key=='p' ) playList[currentSong].loop(0); //Simple Play, double tap possible
 // Note: double tap is automatic rewind, no pause
  Symbol is two triangles
  This changes what the button might become after it is pressed
@@ -1136,4 +1133,8 @@ if ( key=='N' || key=='n' ) { // NEXT //See .txt for starter hint
 //if ( key=='B' || key=='b' ) ; // Previous, Back //Students to finish
 //
 if ( key=='Y' || key=='y' ) currentSong = int(random(numberOfSongs)); //random(0, numberOfSongs)
+}
+//
+
+
 */
